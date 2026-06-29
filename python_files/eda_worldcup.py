@@ -38,7 +38,22 @@ plt.rcParams.update({
 COLORS = ['#58a6ff', '#3fb950', '#f78166', '#d2a8ff',
           '#ffa657', '#79c0ff', '#56d364', '#ff7b72']
 
-DATA_PATH = 'data/'
+import os
+
+# ── Auto-detect data folder path ─────────────────────────────
+# All CSV files including Train.csv and Test.csv are in data/
+# Adjust this path if your folder is named differently
+POSSIBLE_PATHS = ['data/', '../data/', './', '../']
+DATA_PATH = None
+for p in POSSIBLE_PATHS:
+    if os.path.exists(p + 'Train.csv') or os.path.exists(p + 'train.csv'):
+        DATA_PATH = p
+        break
+
+if DATA_PATH is None:
+    DATA_PATH = 'data/'  # fallback default
+    
+print(f"📁 Using data path: {DATA_PATH}")
 
 # =============================================================
 # SECTION 0: LOAD ALL DATASETS
@@ -47,8 +62,9 @@ print("=" * 60)
 print("LOADING ALL DATASETS")
 print("=" * 60)
 
+# All files are in the SAME folder
 datasets = {
-    # Already using
+    # ✅ Already using
     'team_appearances':     'team_appearances.csv',
     'host_countries':       'host_countries.csv',
     'award_winners':        'award_winners.csv',
@@ -57,13 +73,13 @@ datasets = {
     'tournament_standings': 'tournament_standings.csv',
     'tournaments':          'tournaments.csv',
     'teams':                'teams.csv',
-    # Important datasets
+    # ❗ Critical / Important
     'qualified_teams':      'qualified_teams.csv',
     'group_standings':      'group_standings.csv',
     'goals':                'goals.csv',
     'matches':              'matches.csv',
     'master_features':      'master_features.csv',
-    # Challenge files
+    # 🎯 Challenge files — same folder as all others
     'train':                'Train.csv',
     'test':                 'Test.csv',
 }
@@ -71,11 +87,11 @@ datasets = {
 dfs = {}
 for key, fname in datasets.items():
     try:
-        path = DATA_PATH + fname  
+        path = DATA_PATH + fname
         dfs[key] = pd.read_csv(path)
-        print(f"   {key:25s} → {dfs[key].shape}")
+        print(f"  ✅ {key:25s} → {dfs[key].shape}")
     except Exception as e:
-        print(f"   {key:25s} → ERROR: {e}")
+        print(f"  ❌ {key:25s} → ERROR: {e}")
 
 # =============================================================
 # SECTION 1: DATA UNDERSTANDING
@@ -86,7 +102,7 @@ print("=" * 60)
 
 def profile_dataset(name, df):
     print(f"\n{'─'*55}")
-    print(f" DATASET: {name.upper()}")
+    print(f"📋 DATASET: {name.upper()}")
     print(f"{'─'*55}")
     print(f"  Shape        : {df.shape[0]:,} rows × {df.shape[1]} columns")
     print(f"  Memory       : {df.memory_usage(deep=True).sum() / 1024:.1f} KB")
@@ -96,7 +112,7 @@ def profile_dataset(name, df):
         nulls = df[col].isna().sum()
         pct   = nulls / len(df) * 100
         dtype = str(df[col].dtype)
-        null_flag = f"  {nulls:,} nulls ({pct:.1f}%)" if nulls > 0 else ""
+        null_flag = f"  ⚠️  {nulls:,} nulls ({pct:.1f}%)" if nulls > 0 else ""
         print(f"    • {col:35s} [{dtype:10s}]{null_flag}")
     print(f"\n  SAMPLE (first 2 rows):")
     print(df.head(2).to_string())
@@ -186,7 +202,7 @@ print("\n[bookings]")
 bk = dfs['bookings'].copy()
 print(f"  Nulls:\n{bk.isnull().sum()[bk.isnull().sum() > 0].to_string()}")
 
-print("\nData cleaning complete!")
+print("\n✅ Data cleaning complete!")
 
 # =============================================================
 # SECTION 3: DATA VISUALIZATION
@@ -211,7 +227,7 @@ if 'stage_clean' in train.columns:
     ax.set_title('Stage Distribution', fontweight='bold')
     ax.set_xlabel('Stage')
     ax.set_ylabel('Count')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=30)
     for bar, val in zip(bars, stage_counts.values):
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
                 str(val), ha='center', va='bottom', fontsize=9)
@@ -237,7 +253,7 @@ if 'stage_clean' in train.columns and 'total_goals' in train.columns:
     ax.set_title('Avg Goals by Stage', fontweight='bold')
     ax.set_xlabel('Stage')
     ax.set_ylabel('Avg Goals')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=30)
     for bar, val in zip(bars, stage_goals.values):
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.1,
                 f'{val:.1f}', ha='center', va='bottom', fontsize=9)
@@ -283,7 +299,7 @@ plt.tight_layout()
 plt.savefig('fig1_train_overview.png', dpi=150, bbox_inches='tight',
             facecolor='#0d1117')
 plt.show()
-print("   Figure 1 saved: fig1_train_overview.png")
+print("  ✅ Figure 1 saved: fig1_train_overview.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 2: TEAM APPEARANCES ANALYSIS
@@ -393,7 +409,7 @@ if 'match_period' in g.columns:
     ax.set_title('Goals by Match Period', fontweight='bold')
     ax.set_xlabel('Period')
     ax.set_ylabel('Number of Goals')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=30)
 
 # 3b. Goal types
 if 'goal_type' in g.columns:
@@ -422,7 +438,7 @@ if 'tournament_id' in g.columns:
     ax.set_title('Total Goals per Tournament', fontweight='bold')
     ax.set_xlabel('Year')
     ax.set_ylabel('Total Goals')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=45)
 
 # 3d. Top goal-scoring teams all time
 if 'team_id' in g.columns and 'team_name' in g.columns:
@@ -458,7 +474,7 @@ if 'confederation_id' in g.columns or 'team_id' in g.columns:
     ax.set_title('Goals by Confederation', fontweight='bold')
     ax.set_xlabel('Confederation')
     ax.set_ylabel('Goals')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=30)
 
 plt.tight_layout()
 plt.savefig('fig3_goals_analysis.png', dpi=150, bbox_inches='tight',
@@ -545,7 +561,7 @@ if 'stage_reached' in qt.columns:
     ax.set_title('Qualified Teams — Stage Reached', fontweight='bold')
     ax.set_xlabel('Stage')
     ax.set_ylabel('Count')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=30)
     for bar, val in zip(bars, qt_stages.values):
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.5,
                 str(val), ha='center', va='bottom', fontsize=9)
@@ -561,7 +577,7 @@ if 'is_host' in ta.columns or len(dfs['host_countries']) > 0:
         ax.set_title('Host Country Performance', fontweight='bold')
         ax.set_xlabel('Stage Reached')
         ax.set_ylabel('Count')
-        ax.tick_params(axis='x', rotation=90)
+        ax.tick_params(axis='x', rotation=30)
     else:
         host_merge = ta.merge(
             dfs['host_countries'][['tournament_id', 'team_id']].assign(is_host=1),
@@ -601,7 +617,7 @@ if 'tournament_id' in bk.columns:
     ax.set_title('Total Bookings per Tournament', fontweight='bold')
     ax.set_xlabel('Year')
     ax.set_ylabel('Bookings')
-    ax.tick_params(axis='x', rotation=90)
+    ax.tick_params(axis='x', rotation=45)
 
 # 5b. Yellow vs Red cards
 if 'sending_off' in bk.columns:
@@ -659,7 +675,7 @@ mask = np.triu(np.ones_like(corr, dtype=bool))
 sns.heatmap(corr, mask=mask, ax=ax, cmap='RdYlGn', center=0,
             annot=False, linewidths=0.3, cbar_kws={'shrink': 0.8})
 ax.set_title('Feature Correlation Matrix', fontweight='bold')
-ax.tick_params(axis='x', rotation=90, labelsize=8)
+ax.tick_params(axis='x', rotation=45, labelsize=8)
 ax.tick_params(axis='y', rotation=0, labelsize=8)
 
 # 6b. Top features by variance (most informative)
@@ -683,7 +699,7 @@ fig, axes = plt.subplots(1, 2, figsize=(14, 6))
 fig.suptitle('2026 WORLD CUP — TEST SET PREVIEW', fontsize=16,
              fontweight='bold', color='#58a6ff')
 
-test = dfs['test'].copy()
+test = dfs['test'].copy()  # loaded as lowercase 'test' key
 
 # 7a. Test teams with historical coverage
 test_with_hist = test.merge(
@@ -718,7 +734,7 @@ if 'country' in test.columns:
         ax.set_title('2026 Teams by Confederation', fontweight='bold')
         ax.set_xlabel('Confederation')
         ax.set_ylabel('Number of Teams')
-        ax.tick_params(axis='x', rotation=90)
+        ax.tick_params(axis='x', rotation=30)
         for bar, val in zip(bars, conf_dist.values):
             ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.1,
                     str(val), ha='center', va='bottom', fontsize=10)
@@ -744,7 +760,7 @@ for name, df in dfs.items():
     print(f"  {name:25s}: {df.shape[0]:,} rows × {df.shape[1]} cols")
 
 print("""
- KEY FINDINGS
+🔍 KEY FINDINGS
 ────────────────────────────────────────
 1. STAGE IMBALANCE
    - 'group' has most samples (~50%)
@@ -771,7 +787,7 @@ print("""
    - confederation, is_host, tournaments_played → moderate
    - bookings, penalty experience → weak but useful
 
- OUTPUT FILES
+📁 OUTPUT FILES
 ────────────────────────────────────────
   fig1_train_overview.png
   fig2_team_appearances.png
@@ -782,4 +798,419 @@ print("""
   fig7_test_preview.png
 """)
 
-print(" ANALYSIS COMPLETE!")
+print("🏁 EDA COMPLETE! Starting Feature Engineering...")
+
+# =============================================================
+# SECTION 5: FEATURE ENGINEERING
+# Built directly from dfs{} already loaded in EDA pipeline
+# =============================================================
+print("\n" + "=" * 60)
+print("SECTION 5: FEATURE ENGINEERING")
+print("=" * 60)
+
+# ── 5.1 BASE TEAM PERFORMANCE PER TOURNAMENT ─────────────────
+print("\n[5.1] Base Performance Features...")
+
+ta = dfs['team_appearances'].copy()
+
+base_perf = ta.groupby(['tournament_id', 'team_id', 'team_name']).agg(
+    matches_played        = ('match_id', 'count'),
+    goals_scored          = ('goals_for', 'sum'),
+    goals_conceded        = ('goals_against', 'sum'),
+    wins                  = ('win', 'sum'),
+    losses                = ('lose', 'sum'),
+    draws                 = ('draw', 'sum'),
+    extra_time_games      = ('extra_time', 'sum'),
+    penalty_shootouts     = ('penalty_shootout', 'sum'),
+    home_games            = ('home_team', 'sum'),
+    away_games            = ('away_team', 'sum'),
+    knockout_games        = ('knockout_stage', 'sum'),
+    group_games           = ('group_stage', 'sum'),
+).reset_index()
+
+base_perf['goal_difference']    = base_perf['goals_scored'] - base_perf['goals_conceded']
+base_perf['goals_per_match']    = base_perf['goals_scored'] / base_perf['matches_played']
+base_perf['conceded_per_match'] = base_perf['goals_conceded'] / base_perf['matches_played']
+base_perf['win_rate']           = base_perf['wins'] / base_perf['matches_played']
+base_perf['loss_rate']          = base_perf['losses'] / base_perf['matches_played']
+base_perf['draw_rate']          = base_perf['draws'] / base_perf['matches_played']
+base_perf['points']             = base_perf['wins'] * 3 + base_perf['draws']
+base_perf['points_per_match']   = base_perf['points'] / base_perf['matches_played']
+base_perf['goal_ratio']         = (base_perf['goals_scored'] + 1) / (base_perf['goals_conceded'] + 1)
+base_perf['knockout_rate']      = base_perf['knockout_games'] / base_perf['matches_played']
+
+print(f"  ✅ Base performance: {base_perf.shape}")
+
+# ── 5.2 HOST COUNTRY FEATURE ─────────────────────────────────
+print("\n[5.2] Host Country Features...")
+
+hosts = dfs['host_countries'][['tournament_id', 'team_id']].copy()
+hosts['is_host'] = 1
+base_perf = base_perf.merge(hosts, on=['tournament_id', 'team_id'], how='left')
+base_perf['is_host'] = base_perf['is_host'].fillna(0).astype(int)
+print(f"  ✅ Host entries: {hosts.shape[0]}")
+
+# ── 5.3 TOURNAMENT METADATA ───────────────────────────────────
+print("\n[5.3] Tournament Metadata...")
+
+tourney = dfs['tournaments'][[
+    'tournament_id', 'year', 'count_teams',
+    'round_of_16', 'quarter_finals', 'semi_finals'
+]].copy()
+
+base_perf = base_perf.merge(tourney, on='tournament_id', how='left')
+base_perf['era'] = pd.cut(
+    base_perf['year'],
+    bins=[1929, 1965, 1985, 2000, 2030],
+    labels=[1, 2, 3, 4]
+).astype(float)
+
+print(f"  ✅ After tournament merge: {base_perf.shape}")
+
+# ── 5.4 CONFEDERATION FEATURES ───────────────────────────────
+print("\n[5.4] Confederation Features...")
+
+teams_info = dfs['teams'][['team_id', 'confederation_name', 'region_name']]
+base_perf  = base_perf.merge(teams_info, on='team_id', how='left')
+
+conf_strength = {
+    'Union of European Football Associations':                                      5,
+    'South American Football Confederation':                                        5,
+    'Confederation of North, Central American and Caribbean Association Football':  3,
+    'Confederation of African Football':                                            3,
+    'Asian Football Confederation':                                                 2,
+    'Oceania Football Confederation':                                               1,
+}
+base_perf['confederation_strength'] = (
+    base_perf['confederation_name'].map(conf_strength).fillna(2)
+)
+print(f"  ✅ After confederation merge: {base_perf.shape}")
+
+# ── 5.5 GROUP STAGE FEATURES ─────────────────────────────────
+print("\n[5.5] Group Stage Features...")
+
+gs = dfs['group_standings'][[
+    'tournament_id', 'team_id', 'position', 'played',
+    'wins', 'draws', 'losses', 'goals_for',
+    'goals_against', 'goal_difference', 'points', 'advanced'
+]].copy()
+gs.columns = [
+    'tournament_id', 'team_id', 'group_position', 'group_played',
+    'group_wins', 'group_draws', 'group_losses', 'group_goals_for',
+    'group_goals_against', 'group_goal_diff', 'group_points', 'group_advanced'
+]
+
+base_perf = base_perf.merge(gs, on=['tournament_id', 'team_id'], how='left')
+base_perf['group_win_rate']     = base_perf['group_wins'] / (base_perf['group_played'] + 1e-5)
+base_perf['group_goals_ratio']  = (base_perf['group_goals_for'] + 1) / (base_perf['group_goals_against'] + 1)
+base_perf['group_pts_per_game'] = base_perf['group_points'] / (base_perf['group_played'] + 1e-5)
+
+print(f"  ✅ After group standings: {base_perf.shape}")
+
+# ── 5.6 AWARD FEATURES ───────────────────────────────────────
+print("\n[5.6] Award Features...")
+
+awards = dfs['award_winners'].groupby(
+    ['tournament_id', 'team_id']
+).size().reset_index(name='awards_won')
+
+base_perf = base_perf.merge(awards, on=['tournament_id', 'team_id'], how='left')
+base_perf['awards_won'] = base_perf['awards_won'].fillna(0)
+print(f"  ✅ After awards: {base_perf.shape}")
+
+# ── 5.7 DISCIPLINE FEATURES ──────────────────────────────────
+print("\n[5.7] Discipline Features...")
+
+bk = dfs['bookings'].groupby(['tournament_id', 'team_id']).agg(
+    yellow_cards = ('yellow_card', 'sum'),
+    red_cards    = ('red_card', 'sum'),
+    sending_offs = ('sending_off', 'sum'),
+).reset_index()
+bk['total_bookings']   = bk['yellow_cards'] + bk['red_cards']
+bk['discipline_index'] = bk['yellow_cards'] + (bk['red_cards'] * 3) + (bk['sending_offs'] * 2)
+
+base_perf = base_perf.merge(bk, on=['tournament_id', 'team_id'], how='left')
+base_perf[['yellow_cards', 'red_cards', 'sending_offs',
+           'total_bookings', 'discipline_index']] = \
+    base_perf[['yellow_cards', 'red_cards', 'sending_offs',
+               'total_bookings', 'discipline_index']].fillna(0)
+print(f"  ✅ After bookings: {base_perf.shape}")
+
+# ── 5.8 PENALTY FEATURES ─────────────────────────────────────
+print("\n[5.8] Penalty Features...")
+
+pk = dfs['penalty_kicks'].groupby(['tournament_id', 'team_id']).agg(
+    penalties_taken  = ('converted', 'count'),
+    penalties_scored = ('converted', 'sum'),
+).reset_index()
+pk['penalty_conversion_rate'] = pk['penalties_scored'] / (pk['penalties_taken'] + 1e-5)
+
+base_perf = base_perf.merge(pk, on=['tournament_id', 'team_id'], how='left')
+base_perf[['penalties_taken', 'penalties_scored',
+           'penalty_conversion_rate']] = \
+    base_perf[['penalties_taken', 'penalties_scored',
+               'penalty_conversion_rate']].fillna(0)
+print(f"  ✅ After penalties: {base_perf.shape}")
+
+# ── 5.9 GOALS DETAIL FEATURES ────────────────────────────────
+print("\n[5.9] Goals Detail Features...")
+
+g = dfs['goals'].copy()
+goals_detail = g.groupby(['tournament_id', 'team_id']).agg(
+    first_half_goals  = ('match_period', lambda x: (x == 'first half').sum()),
+    second_half_goals = ('match_period', lambda x: (x == 'second half').sum()),
+    extra_time_goals  = ('match_period', lambda x: x.str.contains('extra', na=False).sum()),
+    own_goals_scored  = ('own_goal', 'sum'),
+    penalty_goals     = ('penalty', 'sum'),
+    early_goals       = ('minute_regulation', lambda x: (x <= 15).sum()),
+    late_goals        = ('minute_regulation', lambda x: (x >= 75).sum()),
+).reset_index()
+
+goals_detail['late_goal_ability'] = goals_detail['late_goals'] / (
+    goals_detail['first_half_goals'] + goals_detail['second_half_goals'] + 1e-5
+)
+goals_detail['penalty_goal_rate'] = goals_detail['penalty_goals'] / (
+    goals_detail['first_half_goals'] + goals_detail['second_half_goals'] + 1e-5
+)
+
+base_perf = base_perf.merge(goals_detail, on=['tournament_id', 'team_id'], how='left')
+goal_detail_cols = [c for c in goals_detail.columns if c not in ['tournament_id', 'team_id']]
+base_perf[goal_detail_cols] = base_perf[goal_detail_cols].fillna(0)
+print(f"  ✅ After goals detail: {base_perf.shape}")
+
+# ── 5.10 HISTORICAL MASTER FEATURES ──────────────────────────
+print("\n[5.10] Historical Master Features...")
+
+mf       = dfs['master_features'].copy()
+hist_cols = [
+    'team_id',
+    'win_rate', 'win_total', 'draw_rate', 'loss_rate',
+    'matches_played_total', 'penalty_experience',
+    'final_appearances', 'semi_appearances',
+    'quarter_appearances', 'round16_appearances', 'group_exits',
+    'recent_win_rate', 'recent_goals_avg',
+    'recent_goal_diff_avg', 'recent_stage_trend',
+    'recent_final_appearances', 'recent_semi_appearances',
+    'avg_stage_reached', 'max_stage_reached',
+    'knockout_percentage', 'deep_run_percentage', 'final_percentage',
+    'goals_avg', 'goals_std', 'goals_median',
+    'goals_against_avg', 'goal_diff_avg',
+]
+
+mf_selected          = mf[hist_cols].copy()
+mf_selected.columns  = ['team_id'] + ['hist_' + c for c in hist_cols[1:]]
+base_perf            = base_perf.merge(mf_selected, on='team_id', how='left')
+hist_feature_cols    = [c for c in mf_selected.columns if c != 'team_id']
+base_perf[hist_feature_cols] = base_perf[hist_feature_cols].fillna(0)
+print(f"  ✅ After master features: {base_perf.shape}")
+
+# ── 5.11 TOURNAMENT STANDINGS ────────────────────────────────
+print("\n[5.11] Tournament Standings...")
+
+standings = dfs['tournament_standings'][['tournament_id', 'team_id', 'position']].copy()
+standings.columns = ['tournament_id', 'team_id', 'final_position']
+base_perf = base_perf.merge(standings, on=['tournament_id', 'team_id'], how='left')
+base_perf['final_position'] = base_perf['final_position'].fillna(99)
+print(f"  ✅ After standings: {base_perf.shape}")
+
+# =============================================================
+# SECTION 6: TARGET MAPPING & COMBINE DATASETS
+# =============================================================
+print("\n" + "=" * 60)
+print("SECTION 6: TARGET MAPPING & COMBINE DATASETS")
+print("=" * 60)
+
+stage_map = {
+    'group stage':        'group',
+    'group':              'group',
+    'second group stage': 'roundof16',
+    'round of 16':        'roundof16',
+    'roundof16':          'roundof16',
+    'quarter-finals':     'qf',
+    'qf':                 'qf',
+    'semi-finals':        'sf',
+    'sf':                 'sf',
+    'third-place match':  'sf',
+    'final round':        'runnerup',
+    'runnerup':           'runnerup',
+    'final':              'champion',
+    'champion':           'champion',
+}
+stage_numeric = {
+    'group': 0, 'roundof16': 1, 'qf': 2,
+    'sf': 3,    'runnerup': 4,  'champion': 5
+}
+
+train_raw = dfs['train'].copy()
+train_raw['stage_clean']   = (
+    train_raw['stage_reached']
+    .astype(str).str.lower().str.strip()
+    .map(stage_map).fillna('group')
+)
+train_raw['stage_numeric'] = train_raw['stage_clean'].map(stage_numeric)
+
+train_targets = train_raw[[
+    'tournament_id', 'team_id',
+    'stage_clean', 'stage_numeric', 'total_goals'
+]].copy()
+
+# Combine base_perf + targets
+train_final = base_perf.merge(
+    train_targets, on=['tournament_id', 'team_id'], how='inner'
+).dropna(subset=['stage_clean', 'total_goals'])
+
+print(f"\n  ✅ Combined training dataset: {train_final.shape}")
+print(f"\n  Stage distribution:")
+print(train_final['stage_clean'].value_counts().to_string())
+print(f"\n  Goals stats:")
+print(train_final['total_goals'].describe().round(2).to_string())
+
+# =============================================================
+# SECTION 7: BUILD TEST FEATURES
+# =============================================================
+print("\n" + "=" * 60)
+print("SECTION 7: BUILD TEST FEATURES")
+print("=" * 60)
+
+test_raw = dfs['test'].copy()
+
+name_fixes = {
+    'Czechia':       'Czech Republic',
+    'Turkiye':       'Turkey',
+    'Cabo Verde':    'Cape Verde',
+    "Cote d'Ivoire": 'Ivory Coast',
+    'DR Congo':      'Congo DR',
+}
+test_raw['country_lookup'] = test_raw['country'].replace(name_fixes)
+
+country_to_id = dfs['teams'].set_index('team_name')['team_id'].to_dict()
+extra_map     = dfs['train'].set_index('country')['team_id'].to_dict()
+country_to_id.update(extra_map)
+test_raw['team_id'] = test_raw['country_lookup'].map(country_to_id)
+
+print(f"  Matched  : {test_raw['team_id'].notna().sum()}/48")
+print(f"  Unmatched: {test_raw[test_raw['team_id'].isna()]['country'].tolist()}")
+
+# Historical averages per team
+numeric_base_cols = base_perf.select_dtypes(include=[np.number]).columns.tolist()
+hist_avg  = base_perf.groupby('team_id')[numeric_base_cols].mean().reset_index()
+test_feats = test_raw[['ID', 'country', 'team_id']].merge(
+    hist_avg, on='team_id', how='left'
+)
+
+# 2026 overrides
+test_feats['count_teams'] = 48
+test_feats['is_host']     = test_feats['country'].isin(
+    ['United States', 'Canada', 'Mexico']
+).astype(int)
+
+test_conf = test_raw[['team_id']].merge(
+    dfs['teams'][['team_id', 'confederation_name']], on='team_id', how='left'
+)
+test_feats['confederation_strength'] = (
+    test_conf['confederation_name'].map(conf_strength).fillna(2).values
+)
+
+# Fill new teams with bottom 25%
+bottom_25 = train_final.select_dtypes(include=[np.number]).quantile(0.25)
+for col in test_feats.select_dtypes(include=[np.number]).columns:
+    if col in bottom_25.index:
+        test_feats[col] = test_feats[col].fillna(bottom_25[col])
+    else:
+        test_feats[col] = test_feats[col].fillna(0)
+
+print(f"\n  ✅ Test features shape: {test_feats.shape}")
+
+# =============================================================
+# SECTION 8: DEFINE FEATURE SETS & SAVE
+# =============================================================
+print("\n" + "=" * 60)
+print("SECTION 8: FEATURE SETS & SAVE")
+print("=" * 60)
+
+stage_features = [
+    'matches_played', 'wins', 'losses', 'draws',
+    'win_rate', 'loss_rate', 'draw_rate',
+    'goals_conceded', 'conceded_per_match',
+    'points', 'points_per_match', 'goal_ratio',
+    'extra_time_games', 'penalty_shootouts', 'knockout_rate',
+    'is_host', 'count_teams', 'confederation_strength', 'era',
+    'group_position', 'group_points', 'group_win_rate',
+    'group_goals_ratio', 'group_pts_per_game', 'group_advanced',
+    'awards_won',
+    'yellow_cards', 'red_cards', 'discipline_index',
+    'penalties_taken', 'penalty_conversion_rate',
+    'first_half_goals', 'second_half_goals',
+    'late_goal_ability', 'late_goals', 'early_goals',
+    'hist_win_rate', 'hist_win_total', 'hist_matches_played_total',
+    'hist_penalty_experience', 'hist_final_appearances',
+    'hist_semi_appearances', 'hist_quarter_appearances',
+    'hist_round16_appearances', 'hist_group_exits',
+    'hist_recent_win_rate', 'hist_recent_stage_trend',
+    'hist_avg_stage_reached', 'hist_max_stage_reached',
+    'hist_knockout_percentage', 'hist_deep_run_percentage',
+    'hist_final_percentage', 'hist_goals_avg',
+    'hist_goals_against_avg', 'hist_goal_diff_avg',
+    'final_position',
+]
+
+goals_features = [
+    'matches_played', 'wins', 'losses', 'draws',
+    'win_rate', 'loss_rate', 'draw_rate',
+    'goals_conceded', 'conceded_per_match',
+    'points', 'points_per_match',
+    'extra_time_games', 'penalty_shootouts', 'knockout_rate',
+    'is_host', 'count_teams', 'confederation_strength', 'era',
+    'group_position', 'group_points', 'group_win_rate',
+    'group_pts_per_game', 'group_advanced',
+    'awards_won',
+    'yellow_cards', 'discipline_index',
+    'penalties_taken', 'penalty_conversion_rate',
+    'hist_win_rate', 'hist_win_total', 'hist_matches_played_total',
+    'hist_penalty_experience', 'hist_final_appearances',
+    'hist_semi_appearances', 'hist_quarter_appearances',
+    'hist_recent_win_rate', 'hist_avg_stage_reached',
+    'hist_knockout_percentage', 'hist_deep_run_percentage',
+    'hist_goals_avg', 'hist_goals_against_avg',
+    'hist_goal_diff_avg', 'hist_goals_std', 'hist_goals_median',
+    'final_position',
+]
+
+# Ensure all features exist
+for f in set(stage_features + goals_features):
+    if f not in train_final.columns:
+        train_final[f] = 0
+    if f not in test_feats.columns:
+        test_feats[f]  = 0
+
+# Final matrices — exposed globally for modelling notebook
+X_stage      = train_final[stage_features].fillna(0).values
+X_goals      = train_final[goals_features].fillna(0).values
+y_stage      = train_final['stage_numeric'].values.astype(int)
+y_goals      = train_final['total_goals'].values
+X_test_stage = test_feats[stage_features].fillna(0).values
+X_test_goals = test_feats[goals_features].fillna(0).values
+
+# Save
+train_final.to_csv('data/train_engineered.csv', index=False)
+test_feats.to_csv('data/test_engineered.csv',   index=False)
+
+print(f"  X_stage      : {X_stage.shape}")
+print(f"  X_goals      : {X_goals.shape}")
+print(f"  X_test_stage : {X_test_stage.shape}")
+print(f"  X_test_goals : {X_test_goals.shape}")
+print(f"\n  Stage distribution:")
+for k, v in sorted(pd.Series(y_stage).value_counts().items()):
+    print(f"    Class {k} → {v} samples")
+print(f"\n  Goals — mean: {y_goals.mean():.2f}  std: {y_goals.std():.2f}")
+print(f"\n  Stage features : {len(stage_features)}")
+print(f"  Goals features : {len(goals_features)}")
+print(f"\n  Saved → data/train_engineered.csv")
+print(f"  Saved → data/test_engineered.csv")
+
+print("\n" + "=" * 60)
+print("✅ FULL PIPELINE COMPLETE!")
+print("=" * 60)
+print("""
+  
+""")
