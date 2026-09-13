@@ -73,13 +73,13 @@ datasets = {
     'tournament_standings': 'tournament_standings.csv',
     'tournaments':          'tournaments.csv',
     'teams':                'teams.csv',
-    # ❗ Critical / Important
+    #  Critical / Important
     'qualified_teams':      'qualified_teams.csv',
     'group_standings':      'group_standings.csv',
     'goals':                'goals.csv',
     'matches':              'matches.csv',
     'master_features':      'master_features.csv',
-    # 🎯 Challenge files — same folder as all others
+    #  Challenge files — same folder as all others
     'train':                'Train.csv',
     'test':                 'Test.csv',
 }
@@ -89,9 +89,9 @@ for key, fname in datasets.items():
     try:
         path = DATA_PATH + fname
         dfs[key] = pd.read_csv(path)
-        print(f"  ✅ {key:25s} → {dfs[key].shape}")
+        print(f"   {key:25s} → {dfs[key].shape}")
     except Exception as e:
-        print(f"  ❌ {key:25s} → ERROR: {e}")
+        print(f"   {key:25s} → ERROR: {e}")
 
 # =============================================================
 # SECTION 1: DATA UNDERSTANDING
@@ -102,7 +102,7 @@ print("=" * 60)
 
 def profile_dataset(name, df):
     print(f"\n{'─'*55}")
-    print(f"📋 DATASET: {name.upper()}")
+    print(f" DATASET: {name.upper()}")
     print(f"{'─'*55}")
     print(f"  Shape        : {df.shape[0]:,} rows × {df.shape[1]} columns")
     print(f"  Memory       : {df.memory_usage(deep=True).sum() / 1024:.1f} KB")
@@ -112,7 +112,7 @@ def profile_dataset(name, df):
         nulls = df[col].isna().sum()
         pct   = nulls / len(df) * 100
         dtype = str(df[col].dtype)
-        null_flag = f"  ⚠️  {nulls:,} nulls ({pct:.1f}%)" if nulls > 0 else ""
+        null_flag = f"   {nulls:,} nulls ({pct:.1f}%)" if nulls > 0 else ""
         print(f"    • {col:35s} [{dtype:10s}]{null_flag}")
     print(f"\n  SAMPLE (first 2 rows):")
     print(df.head(2).to_string())
@@ -202,7 +202,7 @@ print("\n[bookings]")
 bk = dfs['bookings'].copy()
 print(f"  Nulls:\n{bk.isnull().sum()[bk.isnull().sum() > 0].to_string()}")
 
-print("\n✅ Data cleaning complete!")
+print("\nData cleaning complete!")
 
 # =============================================================
 # SECTION 3: DATA VISUALIZATION
@@ -299,7 +299,7 @@ plt.tight_layout()
 plt.savefig('fig1_train_overview.png', dpi=150, bbox_inches='tight',
             facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 1 saved: fig1_train_overview.png")
+print("  Figure 1 saved: fig1_train_overview.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 2: TEAM APPEARANCES ANALYSIS
@@ -656,7 +656,7 @@ plt.tight_layout()
 plt.savefig('fig5_discipline.png', dpi=150, bbox_inches='tight',
             facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 5 saved: fig5_discipline.png")
+print("  Figure 5 saved: fig5_discipline.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 6: MASTER FEATURES & CORRELATION
@@ -690,7 +690,7 @@ plt.tight_layout()
 plt.savefig('fig6_master_features.png', dpi=150, bbox_inches='tight',
             facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 6 saved: fig6_master_features.png")
+print("   Figure 6 saved: fig6_master_features.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 7: TEST SET & 2026 PREVIEW
@@ -743,7 +743,7 @@ plt.tight_layout()
 plt.savefig('fig7_test_preview.png', dpi=150, bbox_inches='tight',
             facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 7 saved: fig7_test_preview.png")
+print("  Figure 7 saved: fig7_test_preview.png")
 
 # =============================================================
 # SECTION 4: SUMMARY REPORT
@@ -865,7 +865,7 @@ base_perf['era'] = pd.cut(
     labels=[1, 2, 3, 4]
 ).astype(float)
 
-print(f"  ✅ After tournament merge: {base_perf.shape}")
+print(f"  After tournament merge: {base_perf.shape}")
 
 # ── 5.4 CONFEDERATION FEATURES ───────────────────────────────
 print("\n[5.4] Confederation Features...")
@@ -884,7 +884,7 @@ conf_strength = {
 base_perf['confederation_strength'] = (
     base_perf['confederation_name'].map(conf_strength).fillna(2)
 )
-print(f"  ✅ After confederation merge: {base_perf.shape}")
+print(f"   After confederation merge: {base_perf.shape}")
 
 # ── 5.5 GROUP STAGE FEATURES ─────────────────────────────────
 print("\n[5.5] Group Stage Features...")
@@ -905,7 +905,7 @@ base_perf['group_win_rate']     = base_perf['group_wins'] / (base_perf['group_pl
 base_perf['group_goals_ratio']  = (base_perf['group_goals_for'] + 1) / (base_perf['group_goals_against'] + 1)
 base_perf['group_pts_per_game'] = base_perf['group_points'] / (base_perf['group_played'] + 1e-5)
 
-print(f"  ✅ After group standings: {base_perf.shape}")
+print(f"  After group standings: {base_perf.shape}")
 
 # ── 5.6 AWARD FEATURES ───────────────────────────────────────
 print("\n[5.6] Award Features...")
@@ -916,7 +916,7 @@ awards = dfs['award_winners'].groupby(
 
 base_perf = base_perf.merge(awards, on=['tournament_id', 'team_id'], how='left')
 base_perf['awards_won'] = base_perf['awards_won'].fillna(0)
-print(f"  ✅ After awards: {base_perf.shape}")
+print(f"   After awards: {base_perf.shape}")
 
 # ── 5.7 DISCIPLINE FEATURES ──────────────────────────────────
 print("\n[5.7] Discipline Features...")
@@ -934,7 +934,7 @@ base_perf[['yellow_cards', 'red_cards', 'sending_offs',
            'total_bookings', 'discipline_index']] = \
     base_perf[['yellow_cards', 'red_cards', 'sending_offs',
                'total_bookings', 'discipline_index']].fillna(0)
-print(f"  ✅ After bookings: {base_perf.shape}")
+print(f"   After bookings: {base_perf.shape}")
 
 # ── 5.8 PENALTY FEATURES ─────────────────────────────────────
 print("\n[5.8] Penalty Features...")
@@ -976,7 +976,7 @@ goals_detail['penalty_goal_rate'] = goals_detail['penalty_goals'] / (
 base_perf = base_perf.merge(goals_detail, on=['tournament_id', 'team_id'], how='left')
 goal_detail_cols = [c for c in goals_detail.columns if c not in ['tournament_id', 'team_id']]
 base_perf[goal_detail_cols] = base_perf[goal_detail_cols].fillna(0)
-print(f"  ✅ After goals detail: {base_perf.shape}")
+print(f"   After goals detail: {base_perf.shape}")
 
 # ── 5.10 HISTORICAL MASTER FEATURES ──────────────────────────
 print("\n[5.10] Historical Master Features...")
@@ -1059,7 +1059,7 @@ train_final = base_perf.merge(
     train_targets, on=['tournament_id', 'team_id'], how='inner'
 ).dropna(subset=['stage_clean', 'total_goals'])
 
-print(f"\n  ✅ Combined training dataset: {train_final.shape}")
+print(f"\n   Combined training dataset: {train_final.shape}")
 print(f"\n  Stage distribution:")
 print(train_final['stage_clean'].value_counts().to_string())
 print(f"\n  Goals stats:")
@@ -1119,7 +1119,7 @@ for col in test_feats.select_dtypes(include=[np.number]).columns:
     else:
         test_feats[col] = test_feats[col].fillna(0)
 
-print(f"\n  ✅ Test features shape: {test_feats.shape}")
+print(f"\n   Test features shape: {test_feats.shape}")
 
 # =============================================================
 # SECTION 8: DEFINE FEATURE SETS & SAVE
@@ -1209,7 +1209,7 @@ print(f"\n  Saved → data/train_engineered.csv")
 print(f"  Saved → data/test_engineered.csv")
 
 print("\n" + "=" * 60)
-print("✅ FULL PIPELINE COMPLETE!")
+print(" FULL PIPELINE COMPLETE!")
 print("=" * 60)
 print("""
   
