@@ -389,21 +389,21 @@ print("=" * 60)
 
 skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
-# ── Baseline 1: Linear Regression ────────────────────────────
+# ──   Linear Regression ────────────────────────────
 print("\n[7.1] Linear Regression — Goals")
 lr = LinearRegression()
 cv_lr = cross_val_score(lr, X_goals_scaled, y_goals,
                         cv=5, scoring='neg_root_mean_squared_error')
 print(f"  RMSE: {-cv_lr.mean():.4f} ± {cv_lr.std():.4f}")
 
-# ── Baseline 2: Logistic Regression ──────────────────────────
+# ──  Logistic Regression ──────────────────────────
 print("\n[7.2] Logistic Regression — Stage")
 log_reg = LogisticRegression(max_iter=1000, class_weight='balanced', random_state=42)
 cv_log  = cross_val_score(log_reg, X_stage_scaled, y_stage,
                           cv=skf, scoring='f1_weighted')
 print(f"  F1  : {cv_log.mean():.4f} ± {cv_log.std():.4f}")
 
-# ── Upgraded 1: Random Forest ─────────────────────────────────
+# ──   Random Forest ─────────────────────────────────
 print("\n[7.3] Random Forest — Goals")
 rf_goals = RandomForestRegressor(n_estimators=300, random_state=42, n_jobs=-1)
 cv_rf_g  = cross_val_score(rf_goals, X_goals_scaled, y_goals,
@@ -567,7 +567,7 @@ COLORS = ['#58a6ff', '#3fb950', '#f78166', '#d2a8ff', '#ffa657', '#79c0ff']
  
 # ── Figure 1: Model Comparison (top row) ─────────────────────
 fig1, axes1 = plt.subplots(1, 3, figsize=(22, 7))
-fig1.suptitle('BASELINE MODEL COMPARISON', fontsize=18,
+fig1.suptitle('BASELINE MODEL COMPARISON', fontsize=10,
               fontweight='bold', color='#58a6ff', y=1.02)
 
 # Plot 1 — RMSE comparison
@@ -576,7 +576,7 @@ bars = ax.bar(results['Model'], results['RMSE'],
               color=['#58a6ff', '#3fb950', '#f78166'],
               edgecolor='none', width=0.5)
 ax.set_title('Goals RMSE by Model\n(Lower is Better)',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15, fontsize=7  )
 ax.set_ylabel('RMSE', labelpad=10)
 ax.set_ylim(0, max(results['RMSE']) * 1.25)
 ax.tick_params(axis='x', labelsize=12)
@@ -584,7 +584,7 @@ for bar, val in zip(bars, results['RMSE']):
     ax.text(bar.get_x() + bar.get_width()/2,
             bar.get_height() + 0.03,
             f'{val:.3f}', ha='center', va='bottom',
-            fontsize=13, fontweight='bold',
+            fontsize=7, fontweight='bold',
             color='#e6edf3')
 
 # Plot 2 — F1 comparison
@@ -593,7 +593,7 @@ bars = ax.bar(results['Model'], results['F1'],
               color=['#58a6ff', '#3fb950', '#f78166'],
               edgecolor='none', width=0.5)
 ax.set_title('Stage F1 by Model\n(Higher is Better)',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15, fontsize=7  )
 ax.set_ylabel('F1 Score', labelpad=10)
 ax.set_ylim(0, 1.15)
 ax.tick_params(axis='x', labelsize=12)
@@ -611,7 +611,7 @@ stage_counts = stage_series.value_counts().reindex(stage_order, fill_value=0)
 bars = ax.bar(stage_counts.index, stage_counts.values,
               color=COLORS[:len(stage_counts)], edgecolor='none', width=0.6)
 ax.set_title('2026 Predicted Stage Distribution',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15, fontsize=7)
 ax.set_ylabel('Number of Teams', labelpad=10)
 ax.tick_params(axis='x', rotation=35, labelsize=11)
 for bar, val in zip(bars, stage_counts.values):
@@ -625,12 +625,12 @@ fig1.tight_layout(pad=3.0)
 plt.savefig('fig8a_model_comparison.png', dpi=150,
             bbox_inches='tight', facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 8a saved: fig8a_model_comparison.png")
+print(" Figure 8a saved: fig8a_model_comparison.png")
 
 # ── Figure 2: Feature Importances (bottom row) ───────────────
 fig2, axes2 = plt.subplots(1, 3, figsize=(26, 9))
 fig2.suptitle('FEATURE IMPORTANCE & GOAL PREDICTIONS',
-              fontsize=18, fontweight='bold',
+              fontsize=10, fontweight='bold',
               color='#58a6ff', y=1.02)
 
 # Plot 4 — Goals distribution
@@ -641,7 +641,7 @@ ax.axvline(goals_pred.mean(), color='#f78166',
            linestyle='--', linewidth=2.5,
            label=f'Mean: {goals_pred.mean():.1f}')
 ax.set_title('Predicted Goals Distribution (2026)',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15,fontsize=7)
 ax.set_xlabel('Predicted Goals', labelpad=10)
 ax.set_ylabel('Number of Teams', labelpad=10)
 ax.legend(fontsize=12)
@@ -656,7 +656,7 @@ ax.barh(feat_imp['feature'].iloc[::-1],
         feat_imp['importance'].iloc[::-1],
         color='#ffa657', edgecolor='none', height=0.7)
 ax.set_title('Top 15 Features — Goals Model',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15,fontsize=7)
 ax.set_xlabel('Feature Importance', labelpad=10)
 ax.tick_params(axis='y', labelsize=11)
 
@@ -670,7 +670,7 @@ ax.barh(feat_imp_s['feature'].iloc[::-1],
         feat_imp_s['importance'].iloc[::-1],
         color='#d2a8ff', edgecolor='none', height=0.7)
 ax.set_title('Top 15 Features — Stage Model',
-             fontweight='bold', pad=15)
+             fontweight='bold', pad=15, fontsize=7)
 ax.set_xlabel('Feature Importance', labelpad=10)
 ax.tick_params(axis='y', labelsize=11)
 
@@ -678,10 +678,10 @@ fig2.tight_layout(pad=3.0)
 plt.savefig('fig8b_feature_importance.png', dpi=150,
             bbox_inches='tight', facecolor='#0d1117')
 plt.show()
-print("  ✅ Figure 8b saved: fig8b_feature_importance.png")
+print(" Figure 8b saved: fig8b_feature_importance.png")
 
 print("\n" + "=" * 60)
-print("✅ MODELLING COMPLETE!")
+print(" MODELLING COMPLETE!")
 print("=" * 60)
 print(f"""
   RESULTS SUMMARY
@@ -698,10 +698,5 @@ print(f"""
   ─────────────────────────────────────────
   Submission → data/submission_baseline.csv
   Figure     → fig8_model_results.png
-
-  NEXT STEPS
-  ─────────────────────────────────────────
-  → Tune hyperparameters with GridSearchCV
-  → Try LightGBM and CatBoost ensemble
-  → Submit and check leaderboard score
+ 
 """)
