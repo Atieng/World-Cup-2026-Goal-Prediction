@@ -9,6 +9,7 @@ from sklearn.metrics import(
  
 from sklearn.utils.class_weight import compute_sample_weight
 import xgboost as xgb
+import lightgbm as lgb
 import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
@@ -442,6 +443,30 @@ cv_xgb_s = cross_val_score(xgb_stage_model, X_stage_scaled, y_stage,
                             cv=skf, scoring='f1_weighted')
 print(f"  F1  : {cv_xgb_s.mean():.4f} ± {cv_xgb_s.std():.4f}")
 
+# ── Upgraded 3: LightGBM ──────────────────────────────────────
+print("\n[7.7] LightGBM — Goals")
+lgb_goals_model = lgb.LGBMRegressor(
+    objective='poisson', n_estimators=500, learning_rate=0.05,
+    num_leaves=20, max_depth=5, min_child_samples=10,
+    subsample=0.8, colsample_bytree=0.8,
+    reg_alpha=0.1, reg_lambda=1.0,
+    random_state=42, n_jobs=-1, verbosity=-1
+)
+cv_lgb_g = cross_val_score(lgb_goals_model, X_goals_scaled, y_goals,
+                            cv=5, scoring='neg_root_mean_squared_error')
+print(f"  RMSE: {-cv_lgb_g.mean():.4f} ± {cv_lgb_g.std():.4f}")
+
+print("\n[7.8] LightGBM — Stage")
+lgb_stage_model = lgb.LGBMClassifier(
+    objective='multiclass', num_class=6, n_estimators=300,
+    learning_rate=0.05, num_leaves=20, max_depth=5,
+    min_child_samples=10, subsample=0.8, colsample_bytree=0.8,
+    class_weight='balanced', random_state=42, n_jobs=-1, verbosity=-1
+)
+cv_lgb_s = cross_val_score(lgb_stage_model, X_stage_scaled, y_stage,
+                            cv=skf, scoring='f1_weighted')
+print(f"  F1  : {cv_lgb_s.mean():.4f} ± {cv_lgb_s.std():.4f}")
+
 # ============================================================
 # STEP 8: MODEL COMPARISON SUMMARY
 # ============================================================
@@ -450,9 +475,9 @@ print("STEP 8: MODEL COMPARISON")
 print("=" * 60)
 
 results = pd.DataFrame({
-    'Model':  ['Linear Regression', 'Random Forest', 'XGBoost'],
-    'RMSE':   [-cv_lr.mean(), -cv_rf_g.mean(), -cv_xgb_g.mean()],
-    'F1':     [cv_log.mean(), cv_rf_s.mean(), cv_xgb_s.mean()],
+    'Model':  ['Linear Regression', 'Random Forest', 'XGBoost', 'LightGBM'],
+    'RMSE':   [-cv_lr.mean(), -cv_rf_g.mean(), -cv_xgb_g.mean(), -cv_lgb_g.mean()],
+    'F1':     [cv_log.mean(), cv_rf_s.mean(), cv_xgb_s.mean(), cv_lgb_s.mean()],
 })
 results['Best_Goals'] = results['RMSE'] == results['RMSE'].min()
 results['Best_Stage'] = results['F1']   == results['F1'].max()
@@ -471,13 +496,28 @@ print("\n" + "=" * 60)
 print("STEP 9: TRAIN FINAL MODELS")
 print("=" * 60)
 
-# Train best goals model
+# Train XGBoost final models
 xgb_goals_model.fit(X_goals_scaled, y_goals)
-print("  Goals model trained")
+print("  XGBoost goals model trained")
 
-# Train best stage model
 xgb_stage_model.fit(X_stage_scaled, y_stage, sample_weight=sw)
-print("   Stage model trained")
+print("  XGBoost stage model trained")
+
+# Train LightGBM final models (used in the ensemble blend)
+lgb_goals_model.fit(X_goals_scaled, y_goals)
+print("  LightGBM goals model trained")
+
+lgb_stage_model.fit(X_stage_scaled, y_stage, sample_weight=sw)
+print("  LightGBM stage model trained")
+
+# Blend weights — weighted toward whichever CV score was stronger,
+# but both models always contribute so the blend stays robust
+xgb_w_goals = (1 / -cv_xgb_g.mean()) / ((1 / -cv_xgb_g.mean()) + (1 / -cv_lgb_g.mean()))
+lgb_w_goals = 1 - xgb_w_goals
+xgb_w_stage = cv_xgb_s.mean() / (cv_xgb_s.mean() + cv_lgb_s.mean())
+lgb_w_stage = 1 - xgb_w_stage
+print(f"  Goals blend weights — XGB: {xgb_w_goals:.2f}  LGB: {lgb_w_goals:.2f}")
+print(f"  Stage blend weights — XGB: {xgb_w_stage:.2f}  LGB: {lgb_w_stage:.2f}")
 
 # ============================================================
 # STEP 10: PREDICTIONS + 2026 CONSTRAINTS
@@ -517,14 +557,46 @@ def enforce_2026_constraints(stage_probs):
             remaining.remove(idx)
     return preds
 
-# Goals predictions
-goals_pred = np.round(
-    np.clip(xgb_goals_model.predict(X_test_goals_scaled), 0, None)
-).astype(int)
+# Goals predictions — blend of XGBoost + LightGBM
+xgb_goals_raw = xgb_goals_model.predict(X_test_goals_scaled)
+lgb_goals_raw = lgb_goals_model.predict(X_test_goals_scaled)
+goals_blend   = xgb_goals_raw * xgb_w_goals + lgb_goals_raw * lgb_w_goals
+goals_pred    = np.round(np.clip(goals_blend, 0, None)).astype(int)
 
-# Stage predictions with constraints
-stage_probs       = xgb_stage_model.predict_proba(X_test_stage_scaled)
+# Stage predictions — blend of XGBoost + LightGBM probabilities, then constraints
+xgb_stage_probs = xgb_stage_model.predict_proba(X_test_stage_scaled)
+lgb_stage_probs = lgb_stage_model.predict_proba(X_test_stage_scaled)
+stage_probs     = xgb_stage_probs * xgb_w_stage + lgb_stage_probs * lgb_w_stage
+
+def consistency_check(goals_pred, stage_pred):
+    """Nudge stage predictions that clash with an unusually high or low goals tally."""
+    corrected = []
+    for goals, stage in zip(goals_pred, stage_pred):
+        if goals >= 12 and stage in ('group', 'roundof32'):
+            corrected.append('sf')
+        elif goals >= 8 and stage == 'group':
+            corrected.append('roundof16')
+        elif goals <= 1 and stage == 'champion':
+            corrected.append('qf')
+        else:
+            corrected.append(stage)
+    return corrected
+
 constrained_stage = enforce_2026_constraints(stage_probs)
+
+# NOTE: consistency_check() is diagnostic-only here. Applying it after
+# enforce_2026_constraints would break the fixed 16/16/8/4/2/1/1 slot
+# allocation Zindi expects, since it can move teams between stages without
+# rebalancing counts. Flip APPLY_CONSISTENCY_CHECK to True only if you also
+# rework enforce_2026_constraints to redistribute the freed/claimed slots.
+APPLY_CONSISTENCY_CHECK = False
+flagged = [i for i, (g, s) in enumerate(zip(goals_pred, constrained_stage))
+           if consistency_check([g], [s])[0] != s]
+if flagged:
+    print(f"\n  ⚠ {len(flagged)} team(s) have goals/stage that look inconsistent "
+          f"(e.g. high goals but early exit). Not auto-corrected — see note above.")
+if APPLY_CONSISTENCY_CHECK:
+    constrained_stage = consistency_check(goals_pred, constrained_stage)
 
 print(f"  Goals — mean: {goals_pred.mean():.2f}  max: {goals_pred.max()}")
 print(f"\n  Stage distribution:")
@@ -690,9 +762,13 @@ print(f"""
   Linear Regression  {-cv_lr.mean():.4f}       {cv_log.mean():.4f}
   Random Forest      {-cv_rf_g.mean():.4f}       {cv_rf_s.mean():.4f}
   XGBoost            {-cv_xgb_g.mean():.4f}       {cv_xgb_s.mean():.4f}
+  LightGBM           {-cv_lgb_g.mean():.4f}       {cv_lgb_s.mean():.4f}
   ─────────────────────────────────────────
-  Best Goals : {best_goals_model}
-  Best Stage : {best_stage_model}
+  Best single Goals model : {best_goals_model}
+  Best single Stage model : {best_stage_model}
+  Final submission uses   : XGBoost + LightGBM blend
+    Goals weights  — XGB {xgb_w_goals:.2f} / LGB {lgb_w_goals:.2f}
+    Stage weights  — XGB {xgb_w_stage:.2f} / LGB {lgb_w_stage:.2f}
 
   OUTPUT
   ─────────────────────────────────────────
