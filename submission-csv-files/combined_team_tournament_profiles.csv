@@ -1,0 +1,626 @@
+tournament_id,team_id,team_name,team_code,total_goals_scored,total_goals_conceded,total_wins,total_losses,total_draws,matches_played,goal_difference,goals_per_match,conceded_per_match,win_rate,position,is_host,year,host_country,count_teams,confederation_name,region_name,elite_awards_count,total_yellow_red_bookings,total_explicit_reds,disciplinary_friction_index,pk_shootouts_taken,pk_shootouts_won,penalty_clutch_factor,position_numeric
+WC-1930,T-03,Argentina,ARG,18,9,4,1,0,5,9,3.6,1.8,0.8,2.0,0,1930,Uruguay,13,South American Football Confederation,South America,1.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1930,T-06,Belgium,BEL,0,4,0,2,0,2,-4,0.0,2.0,0.0,,0,1930,Uruguay,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-07,Bolivia,BOL,0,8,0,2,0,2,-8,0.0,4.0,0.0,,0,1930,Uruguay,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-09,Brazil,BRA,5,2,1,1,0,2,3,2.5,1.0,0.5,,0,1930,Uruguay,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-13,Chile,CHL,5,3,2,1,0,3,2,1.6666666666666667,1.0,0.6666666666666666,,0,1930,Uruguay,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-30,France,FRA,4,3,1,2,0,3,1,1.3333333333333333,1.0,0.3333333333333333,,0,1930,Uruguay,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-46,Mexico,MEX,4,13,0,3,0,3,-9,1.3333333333333333,4.333333333333333,0.0,,0,1930,Uruguay,13,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-55,Paraguay,PRY,1,3,1,1,0,2,-2,0.5,1.5,0.5,,0,1930,Uruguay,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-56,Peru,PER,1,4,0,2,0,2,-3,0.5,2.0,0.0,,0,1930,Uruguay,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-61,Romania,ROU,3,5,1,1,0,2,-2,1.5,2.5,0.5,,0,1930,Uruguay,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1930,T-83,United States,USA,7,6,2,1,0,3,1,2.3333333333333335,2.0,0.6666666666666666,3.0,0,1930,Uruguay,13,"Confederation of North, Central American and Caribbean Association Football",North America,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1930,T-84,Uruguay,URY,15,3,4,0,0,4,12,3.75,0.75,1.0,1.0,1,1930,Uruguay,13,South American Football Confederation,South America,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1930,T-87,Yugoslavia,YUG,7,7,2,1,0,3,0,2.3333333333333335,2.3333333333333335,0.6666666666666666,4.0,0,1930,Uruguay,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1934,T-03,Argentina,ARG,2,3,0,1,0,1,-1,2.0,3.0,0.0,,0,1934,Italy,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-05,Austria,AUT,7,7,2,2,0,4,0,1.75,1.75,0.5,4.0,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1934,T-06,Belgium,BEL,2,5,0,1,0,1,-3,2.0,5.0,0.0,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-09,Brazil,BRA,1,3,0,1,0,1,-2,1.0,3.0,0.0,,0,1934,Italy,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-21,Czechoslovakia,CSK,9,6,3,1,0,4,3,2.25,1.5,0.75,2.0,0,1934,Italy,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1934,T-26,Egypt,EGY,2,4,0,1,0,1,-2,2.0,4.0,0.0,,0,1934,Italy,16,Confederation of African Football,Africa,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-30,France,FRA,2,3,0,1,0,1,-1,2.0,3.0,0.0,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-31,Germany,DEU,11,8,3,1,0,4,3,2.75,2.0,0.75,3.0,0,1934,Italy,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1934,T-36,Hungary,HUN,5,4,1,1,0,2,1,2.5,2.0,0.5,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-41,Italy,ITA,12,3,4,0,1,5,9,2.4,0.6,0.8,1.0,1,1934,Italy,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1934,T-48,Netherlands,NLD,2,3,0,1,0,1,-1,2.0,3.0,0.0,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-61,Romania,ROU,1,2,0,1,0,1,-1,1.0,2.0,0.0,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-73,Spain,ESP,4,3,1,1,1,3,1,1.3333333333333333,1.0,0.3333333333333333,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-74,Sweden,SWE,4,4,1,1,0,2,0,2.0,2.0,0.5,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-75,Switzerland,CHE,5,5,1,1,0,2,0,2.5,2.5,0.5,,0,1934,Italy,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1934,T-83,United States,USA,1,7,0,1,0,1,-6,1.0,7.0,0.0,,0,1934,Italy,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-06,Belgium,BEL,1,3,0,1,0,1,-2,1.0,3.0,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-09,Brazil,BRA,14,11,3,1,1,5,3,2.8,2.2,0.6,3.0,0,1938,France,15,South American Football Confederation,South America,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1938,T-19,Cuba,CUB,5,12,1,1,1,3,-7,1.6666666666666667,4.0,0.3333333333333333,,0,1938,France,15,"Confederation of North, Central American and Caribbean Association Football",Caribbean,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-21,Czechoslovakia,CSK,5,3,1,1,1,3,2,1.6666666666666667,1.0,0.3333333333333333,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-23,Dutch East Indies,IDN,0,6,0,1,0,1,-6,0.0,6.0,0.0,,0,1938,France,15,Asian Football Confederation,South East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-30,France,FRA,4,4,1,1,0,2,0,2.0,2.0,0.5,,1,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-31,Germany,DEU,3,5,0,1,1,2,-2,1.5,2.5,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-36,Hungary,HUN,15,5,3,1,0,4,10,3.75,1.25,0.75,2.0,0,1938,France,15,Union of European Football Associations,Europe,2.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1938,T-41,Italy,ITA,11,5,4,0,0,4,6,2.75,1.25,1.0,1.0,0,1938,France,15,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1938,T-48,Netherlands,NLD,0,3,0,1,0,1,-3,0.0,3.0,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-53,Norway,NOR,1,2,0,1,0,1,-1,1.0,2.0,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-57,Poland,POL,5,6,0,1,0,1,-1,5.0,6.0,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-61,Romania,ROU,4,5,0,1,1,2,-1,2.0,2.5,0.0,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1938,T-74,Sweden,SWE,11,9,1,2,0,3,2,3.6666666666666665,3.0,0.3333333333333333,4.0,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1938,T-75,Switzerland,CHE,5,5,1,1,1,3,0,1.6666666666666667,1.6666666666666667,0.3333333333333333,,0,1938,France,15,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-07,Bolivia,BOL,0,8,0,1,0,1,-8,0.0,8.0,0.0,,0,1950,Brazil,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-09,Brazil,BRA,22,6,4,1,1,6,16,3.6666666666666665,1.0,0.6666666666666666,2.0,1,1950,Brazil,13,South American Football Confederation,South America,2.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1950,T-13,Chile,CHL,5,6,1,2,0,3,-1,1.6666666666666667,2.0,0.3333333333333333,,0,1950,Brazil,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-28,England,ENG,2,2,1,2,0,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,1950,Brazil,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-41,Italy,ITA,4,3,1,1,0,2,1,2.0,1.5,0.5,,0,1950,Brazil,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-46,Mexico,MEX,2,10,0,3,0,3,-8,0.6666666666666666,3.3333333333333335,0.0,,0,1950,Brazil,13,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-55,Paraguay,PRY,2,4,0,1,1,2,-2,1.0,2.0,0.0,,0,1950,Brazil,13,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-73,Spain,ESP,10,12,3,2,1,6,-2,1.6666666666666667,2.0,0.5,4.0,0,1950,Brazil,13,Union of European Football Associations,Europe,2.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1950,T-74,Sweden,SWE,11,15,2,2,1,5,-4,2.2,3.0,0.4,3.0,0,1950,Brazil,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1950,T-75,Switzerland,CHE,4,6,1,1,1,3,-2,1.3333333333333333,2.0,0.3333333333333333,,0,1950,Brazil,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-83,United States,USA,4,8,1,2,0,3,-4,1.3333333333333333,2.6666666666666665,0.3333333333333333,,0,1950,Brazil,13,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1950,T-84,Uruguay,URY,15,5,3,0,1,4,10,3.75,1.25,0.75,1.0,0,1950,Brazil,13,South American Football Confederation,South America,2.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1950,T-87,Yugoslavia,YUG,7,3,2,1,0,3,4,2.3333333333333335,1.0,0.6666666666666666,,0,1950,Brazil,13,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-05,Austria,AUT,17,12,4,1,0,5,5,3.4,2.4,0.8,3.0,0,1954,Switzerland,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1954,T-06,Belgium,BEL,5,8,0,1,1,2,-3,2.5,4.0,0.0,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-09,Brazil,BRA,8,5,1,1,1,3,3,2.6666666666666665,1.6666666666666667,0.3333333333333333,,0,1954,Switzerland,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-21,Czechoslovakia,CSK,0,7,0,2,0,2,-7,0.0,3.5,0.0,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-28,England,ENG,8,8,1,1,1,3,0,2.6666666666666665,2.6666666666666665,0.3333333333333333,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-30,France,FRA,3,3,1,1,0,2,0,1.5,1.5,0.5,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-36,Hungary,HUN,27,10,4,1,0,5,17,5.4,2.0,0.8,2.0,0,1954,Switzerland,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1954,T-41,Italy,ITA,6,7,1,2,0,3,-1,2.0,2.3333333333333335,0.3333333333333333,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-46,Mexico,MEX,2,8,0,2,0,2,-6,1.0,4.0,0.0,,0,1954,Switzerland,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-64,Scotland,SCO,0,8,0,2,0,2,-8,0.0,4.0,0.0,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-71,South Korea,KOR,0,16,0,2,0,2,-16,0.0,8.0,0.0,,0,1954,Switzerland,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-75,Switzerland,CHE,11,11,2,2,0,4,0,2.75,2.75,0.5,,1,1954,Switzerland,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-80,Turkey,TUR,10,11,1,2,0,3,-1,3.3333333333333335,3.6666666666666665,0.3333333333333333,,0,1954,Switzerland,16,Union of European Football Associations,"Europe, Asia",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1954,T-84,Uruguay,URY,16,9,3,2,0,5,7,3.2,1.8,0.6,4.0,0,1954,Switzerland,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1954,T-86,West Germany,DEU,25,14,5,1,0,6,11,4.166666666666667,2.3333333333333335,0.8333333333333334,1.0,0,1954,Switzerland,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1954,T-87,Yugoslavia,YUG,2,3,1,1,1,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,1954,Switzerland,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-03,Argentina,ARG,5,10,1,2,0,3,-5,1.6666666666666667,3.3333333333333335,0.3333333333333333,,0,1958,Sweden,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-05,Austria,AUT,2,7,0,2,1,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-09,Brazil,BRA,16,4,5,0,1,6,12,2.6666666666666665,0.6666666666666666,0.8333333333333334,1.0,0,1958,Sweden,16,South American Football Confederation,South America,2.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1958,T-21,Czechoslovakia,CSK,9,6,1,2,1,4,3,2.25,1.5,0.25,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-28,England,ENG,4,5,0,1,3,4,-1,1.0,1.25,0.0,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-30,France,FRA,23,15,4,2,0,6,8,3.8333333333333335,2.5,0.6666666666666666,3.0,0,1958,Sweden,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1958,T-36,Hungary,HUN,7,5,1,2,1,4,2,1.75,1.25,0.25,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-46,Mexico,MEX,1,8,0,2,1,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,1958,Sweden,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-52,Northern Ireland,NIR,6,10,2,2,1,5,-4,1.2,2.0,0.4,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-55,Paraguay,PRY,9,12,1,1,1,3,-3,3.0,4.0,0.3333333333333333,,0,1958,Sweden,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-64,Scotland,SCO,4,6,0,2,1,3,-2,1.3333333333333333,2.0,0.0,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-72,Soviet Union,SUN,5,6,2,2,1,5,-1,1.0,1.2,0.4,,0,1958,Sweden,16,Union of European Football Associations,"Europe, Asia",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-74,Sweden,SWE,12,7,4,1,1,6,5,2.0,1.1666666666666667,0.6666666666666666,2.0,1,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1958,T-85,Wales,WAL,4,4,1,1,3,5,0,0.8,0.8,0.2,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1958,T-86,West Germany,DEU,12,14,2,2,2,6,-2,2.0,2.3333333333333335,0.3333333333333333,4.0,0,1958,Sweden,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1958,T-87,Yugoslavia,YUG,7,7,1,1,2,4,0,1.75,1.75,0.25,,0,1958,Sweden,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-03,Argentina,ARG,2,3,1,1,1,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,1962,Chile,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-09,Brazil,BRA,14,5,5,0,1,6,9,2.3333333333333335,0.8333333333333334,0.8333333333333334,1.0,0,1962,Chile,16,South American Football Confederation,South America,2.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1962,T-10,Bulgaria,BGR,1,7,0,2,1,3,-6,0.3333333333333333,2.3333333333333335,0.0,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-13,Chile,CHL,10,8,4,2,0,6,2,1.6666666666666667,1.3333333333333333,0.6666666666666666,3.0,1,1962,Chile,16,South American Football Confederation,South America,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1962,T-16,Colombia,COL,5,11,0,2,1,3,-6,1.6666666666666667,3.6666666666666665,0.0,,0,1962,Chile,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-21,Czechoslovakia,CSK,7,7,3,2,1,6,0,1.1666666666666667,1.1666666666666667,0.5,2.0,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1962,T-28,England,ENG,5,6,1,2,1,4,-1,1.25,1.5,0.25,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-36,Hungary,HUN,8,3,2,1,1,4,5,2.0,0.75,0.5,,0,1962,Chile,16,Union of European Football Associations,Europe,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-41,Italy,ITA,3,2,1,1,1,3,1,1.0,0.6666666666666666,0.3333333333333333,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-46,Mexico,MEX,3,4,1,2,0,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,1962,Chile,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-72,Soviet Union,SUN,9,7,2,1,1,4,2,2.25,1.75,0.5,,0,1962,Chile,16,Union of European Football Associations,"Europe, Asia",1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-73,Spain,ESP,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-75,Switzerland,CHE,2,8,0,3,0,3,-6,0.6666666666666666,2.6666666666666665,0.0,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-84,Uruguay,URY,4,6,1,2,0,3,-2,1.3333333333333333,2.0,0.3333333333333333,,0,1962,Chile,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-86,West Germany,DEU,4,2,2,1,1,4,2,1.0,0.5,0.5,,0,1962,Chile,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1962,T-87,Yugoslavia,YUG,10,7,3,3,0,6,3,1.6666666666666667,1.1666666666666667,0.5,4.0,0,1962,Chile,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1966,T-03,Argentina,ARG,4,2,2,1,1,4,2,1.0,0.5,0.5,,0,1966,England,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-09,Brazil,BRA,4,6,1,2,0,3,-2,1.3333333333333333,2.0,0.3333333333333333,,0,1966,England,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-10,Bulgaria,BGR,1,8,0,3,0,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,1966,England,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-13,Chile,CHL,2,5,0,2,1,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,1966,England,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-28,England,ENG,11,3,5,0,1,6,8,1.8333333333333333,0.5,0.8333333333333334,1.0,1,1966,England,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0
+WC-1966,T-30,France,FRA,2,5,0,2,1,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,1966,England,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-36,Hungary,HUN,8,7,2,2,0,4,1,2.0,1.75,0.5,,0,1966,England,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-41,Italy,ITA,2,2,1,2,0,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,1966,England,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-46,Mexico,MEX,1,3,0,1,2,3,-2,0.3333333333333333,1.0,0.0,,0,1966,England,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-51,North Korea,PRK,5,9,1,2,1,4,-4,1.25,2.25,0.25,,0,1966,England,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-58,Portugal,PRT,17,8,5,1,0,6,9,2.8333333333333335,1.3333333333333333,0.8333333333333334,3.0,0,1966,England,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,0.0,0.0,0.0,3.0
+WC-1966,T-72,Soviet Union,SUN,10,6,4,2,0,6,4,1.6666666666666667,1.0,0.6666666666666666,4.0,0,1966,England,16,Union of European Football Associations,"Europe, Asia",1.0,0.0,0.0,0.0,0.0,0.0,0.0,4.0
+WC-1966,T-73,Spain,ESP,4,5,1,2,0,3,-1,1.3333333333333333,1.6666666666666667,0.3333333333333333,,0,1966,England,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-75,Switzerland,CHE,1,9,0,3,0,3,-8,0.3333333333333333,3.0,0.0,,0,1966,England,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-84,Uruguay,URY,2,5,1,1,2,4,-3,0.5,1.25,0.25,,0,1966,England,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1966,T-86,West Germany,DEU,15,6,4,1,1,6,9,2.5,1.0,0.6666666666666666,2.0,0,1966,England,16,Union of European Football Associations,Europe,3.0,0.0,0.0,0.0,0.0,0.0,0.0,2.0
+WC-1970,T-06,Belgium,BEL,4,5,1,2,0,3,-1,1.3333333333333333,1.6666666666666667,0.3333333333333333,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1970,T-09,Brazil,BRA,19,7,6,0,0,6,12,3.1666666666666665,1.1666666666666667,1.0,1.0,0,1970,Mexico,16,South American Football Confederation,South America,1.0,3.0,0.0,3.0,0.0,0.0,0.0,1.0
+WC-1970,T-10,Bulgaria,BGR,5,9,0,2,1,3,-4,1.6666666666666667,3.0,0.0,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1970,T-21,Czechoslovakia,CSK,2,7,0,3,0,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1970,T-27,El Salvador,SLV,0,9,0,3,0,3,-9,0.0,3.0,0.0,,0,1970,Mexico,16,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1970,T-28,England,ENG,4,4,2,2,0,4,0,1.0,1.0,0.5,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1970,T-40,Israel,ISR,1,3,0,1,2,3,-2,0.3333333333333333,1.0,0.0,,0,1970,Mexico,16,Union of European Football Associations,Middle East,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1970,T-41,Italy,ITA,10,8,3,1,2,6,2,1.6666666666666667,1.3333333333333333,0.5,2.0,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,2.0
+WC-1970,T-46,Mexico,MEX,6,4,2,1,1,4,2,1.5,1.0,0.5,,1,1970,Mexico,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1970,T-47,Morocco,MAR,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,1970,Mexico,16,Confederation of African Football,Africa,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1970,T-56,Peru,PER,9,9,2,2,0,4,0,2.25,2.25,0.5,,0,1970,Mexico,16,South American Football Confederation,South America,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1970,T-61,Romania,ROU,4,5,1,2,0,3,-1,1.3333333333333333,1.6666666666666667,0.3333333333333333,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1970,T-72,Soviet Union,SUN,6,2,2,1,1,4,4,1.5,0.5,0.5,,0,1970,Mexico,16,Union of European Football Associations,"Europe, Asia",0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1970,T-74,Sweden,SWE,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,1970,Mexico,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1970,T-84,Uruguay,URY,4,5,2,3,1,6,-1,0.6666666666666666,0.8333333333333334,0.3333333333333333,4.0,0,1970,Mexico,16,South American Football Confederation,South America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,4.0
+WC-1970,T-86,West Germany,DEU,17,10,5,1,0,6,7,2.8333333333333335,1.6666666666666667,0.8333333333333334,3.0,0,1970,Mexico,16,Union of European Football Associations,Europe,1.0,4.0,0.0,4.0,0.0,0.0,0.0,3.0
+WC-1974,T-03,Argentina,ARG,9,12,1,3,2,6,-3,1.5,2.0,0.16666666666666666,,0,1974,West Germany,16,South American Football Confederation,South America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1974,T-04,Australia,AUS,0,5,0,2,1,3,-5,0.0,1.6666666666666667,0.0,,0,1974,West Germany,16,Asian Football Confederation,Oceania,0.0,1.0,1.0,4.0,0.0,0.0,0.0,0.0
+WC-1974,T-09,Brazil,BRA,6,4,3,2,2,7,2,0.8571428571428571,0.5714285714285714,0.42857142857142855,4.0,0,1974,West Germany,16,South American Football Confederation,South America,0.0,11.0,1.0,14.0,0.0,0.0,0.0,4.0
+WC-1974,T-10,Bulgaria,BGR,2,5,0,1,2,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1974,T-13,Chile,CHL,1,2,0,1,2,3,-1,0.3333333333333333,0.6666666666666666,0.0,,0,1974,West Germany,16,South American Football Confederation,South America,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1974,T-24,East Germany,DDR,5,5,2,2,2,6,0,0.8333333333333334,0.8333333333333334,0.3333333333333333,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-1974,T-34,Haiti,HTI,2,14,0,3,0,3,-12,0.6666666666666666,4.666666666666667,0.0,,0,1974,West Germany,16,"Confederation of North, Central American and Caribbean Association Football",Caribbean,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1974,T-41,Italy,ITA,5,4,1,1,1,3,1,1.6666666666666667,1.3333333333333333,0.3333333333333333,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1974,T-48,Netherlands,NLD,15,3,5,1,1,7,12,2.142857142857143,0.42857142857142855,0.7142857142857143,2.0,0,1974,West Germany,16,Union of European Football Associations,Europe,1.0,11.0,0.0,11.0,0.0,0.0,0.0,2.0
+WC-1974,T-57,Poland,POL,16,5,6,1,0,7,11,2.2857142857142856,0.7142857142857143,0.8571428571428571,3.0,0,1974,West Germany,16,Union of European Football Associations,Europe,3.0,5.0,0.0,5.0,0.0,0.0,0.0,3.0
+WC-1974,T-64,Scotland,SCO,3,1,1,0,2,3,2,1.0,0.3333333333333333,0.3333333333333333,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1974,T-74,Sweden,SWE,7,6,2,2,2,6,1,1.1666666666666667,1.0,0.3333333333333333,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1974,T-84,Uruguay,URY,1,6,0,2,1,3,-5,0.3333333333333333,2.0,0.0,,0,1974,West Germany,16,South American Football Confederation,South America,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-1974,T-86,West Germany,DEU,13,4,6,1,0,7,9,1.8571428571428572,0.5714285714285714,0.8571428571428571,1.0,1,1974,West Germany,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,1.0
+WC-1974,T-87,Yugoslavia,YUG,12,7,1,3,2,6,5,2.0,1.1666666666666667,0.16666666666666666,,0,1974,West Germany,16,Union of European Football Associations,Europe,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-1974,T-88,Zaire,COD,0,14,0,3,0,3,-14,0.0,4.666666666666667,0.0,,0,1974,West Germany,16,Confederation of African Football,Africa,0.0,3.0,1.0,6.0,0.0,0.0,0.0,0.0
+WC-1978,T-03,Argentina,ARG,15,4,5,1,1,7,11,2.142857142857143,0.5714285714285714,0.7142857142857143,1.0,1,1978,Argentina,16,South American Football Confederation,South America,2.0,4.0,0.0,4.0,0.0,0.0,0.0,1.0
+WC-1978,T-05,Austria,AUT,7,10,3,3,0,6,-3,1.1666666666666667,1.6666666666666667,0.5,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1978,T-09,Brazil,BRA,10,3,4,0,3,7,7,1.4285714285714286,0.42857142857142855,0.5714285714285714,3.0,0,1978,Argentina,16,South American Football Confederation,South America,1.0,3.0,0.0,3.0,0.0,0.0,0.0,3.0
+WC-1978,T-30,France,FRA,5,5,1,2,0,3,0,1.6666666666666667,1.6666666666666667,0.3333333333333333,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1978,T-36,Hungary,HUN,3,8,0,3,0,3,-5,1.0,2.6666666666666665,0.0,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,6.0,2.0,12.0,0.0,0.0,0.0,0.0
+WC-1978,T-38,Iran,IRN,2,8,0,2,1,3,-6,0.6666666666666666,2.6666666666666665,0.0,,0,1978,Argentina,16,Asian Football Confederation,Middle East,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1978,T-41,Italy,ITA,9,6,4,2,1,7,3,1.2857142857142858,0.8571428571428571,0.5714285714285714,4.0,0,1978,Argentina,16,Union of European Football Associations,Europe,2.0,6.0,0.0,6.0,0.0,0.0,0.0,4.0
+WC-1978,T-46,Mexico,MEX,2,12,0,3,0,3,-10,0.6666666666666666,4.0,0.0,,0,1978,Argentina,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1978,T-48,Netherlands,NLD,15,10,3,2,2,7,5,2.142857142857143,1.4285714285714286,0.42857142857142855,2.0,0,1978,Argentina,16,Union of European Football Associations,Europe,1.0,8.0,1.0,11.0,0.0,0.0,0.0,2.0
+WC-1978,T-56,Peru,PER,7,12,2,3,1,6,-5,1.1666666666666667,2.0,0.3333333333333333,,0,1978,Argentina,16,South American Football Confederation,South America,1.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1978,T-57,Poland,POL,6,6,3,2,1,6,0,1.0,1.0,0.5,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1978,T-64,Scotland,SCO,5,6,1,1,1,3,-1,1.6666666666666667,2.0,0.3333333333333333,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1978,T-73,Spain,ESP,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1978,T-74,Sweden,SWE,1,3,0,2,1,3,-2,0.3333333333333333,1.0,0.0,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1978,T-79,Tunisia,TUN,3,2,1,1,1,3,1,1.0,0.6666666666666666,0.3333333333333333,,0,1978,Argentina,16,Confederation of African Football,Africa,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1978,T-86,West Germany,DEU,10,5,1,1,4,6,5,1.6666666666666667,0.8333333333333334,0.16666666666666666,,0,1978,Argentina,16,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1982,T-01,Algeria,DZA,5,5,2,1,0,3,0,1.6666666666666667,1.6666666666666667,0.6666666666666666,,0,1982,Spain,24,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1982,T-03,Argentina,ARG,8,7,2,3,0,5,1,1.6,1.4,0.4,,0,1982,Spain,24,South American Football Confederation,South America,0.0,9.0,2.0,15.0,0.0,0.0,0.0,0.0
+WC-1982,T-05,Austria,AUT,5,4,2,2,1,5,1,1.0,0.8,0.4,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1982,T-06,Belgium,BEL,3,5,2,2,1,5,-2,0.6,1.0,0.4,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1982,T-09,Brazil,BRA,15,6,4,1,0,5,9,3.0,1.2,0.8,,0,1982,Spain,24,South American Football Confederation,South America,2.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1982,T-11,Cameroon,CMR,1,1,0,0,3,3,0,0.3333333333333333,0.3333333333333333,0.0,,0,1982,Spain,24,Confederation of African Football,Africa,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1982,T-13,Chile,CHL,3,8,0,3,0,3,-5,1.0,2.6666666666666665,0.0,,0,1982,Spain,24,South American Football Confederation,South America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1982,T-21,Czechoslovakia,CSK,2,4,0,1,2,3,-2,0.6666666666666666,1.3333333333333333,0.0,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,3.0,1.0,6.0,0.0,0.0,0.0,0.0
+WC-1982,T-27,El Salvador,SLV,1,13,0,3,0,3,-12,0.3333333333333333,4.333333333333333,0.0,,0,1982,Spain,24,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1982,T-28,England,ENG,6,1,3,0,2,5,5,1.2,0.2,0.6,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1982,T-30,France,FRA,16,12,3,3,1,7,4,2.2857142857142856,1.7142857142857142,0.42857142857142855,4.0,0,1982,Spain,24,Union of European Football Associations,Europe,1.0,6.0,0.0,6.0,6.0,6.0,0.9999983333361112,4.0
+WC-1982,T-35,Honduras,HND,2,3,0,1,2,3,-1,0.6666666666666666,1.0,0.0,,0,1982,Spain,24,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,2.0,1.0,5.0,0.0,0.0,0.0,0.0
+WC-1982,T-36,Hungary,HUN,12,6,1,1,1,3,6,4.0,2.0,0.3333333333333333,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1982,T-41,Italy,ITA,12,6,4,0,3,7,6,1.7142857142857142,0.8571428571428571,0.5714285714285714,1.0,0,1982,Spain,24,Union of European Football Associations,Europe,2.0,11.0,0.0,11.0,0.0,0.0,0.0,1.0
+WC-1982,T-45,Kuwait,KWT,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,1982,Spain,24,Asian Football Confederation,Middle East,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1982,T-49,New Zealand,NZL,2,12,0,3,0,3,-10,0.6666666666666666,4.0,0.0,,0,1982,Spain,24,Oceania Football Confederation,Oceania,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1982,T-52,Northern Ireland,NIR,5,7,1,1,3,5,-2,1.0,1.4,0.2,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1982,T-56,Peru,PER,2,6,0,1,2,3,-4,0.6666666666666666,2.0,0.0,,0,1982,Spain,24,South American Football Confederation,South America,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1982,T-57,Poland,POL,11,5,3,1,3,7,6,1.5714285714285714,0.7142857142857143,0.42857142857142855,3.0,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,10.0,0.0,10.0,0.0,0.0,0.0,3.0
+WC-1982,T-64,Scotland,SCO,8,8,1,1,1,3,0,2.6666666666666665,2.6666666666666665,0.3333333333333333,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1982,T-72,Soviet Union,SUN,7,4,2,1,2,5,3,1.4,0.8,0.4,,0,1982,Spain,24,Union of European Football Associations,"Europe, Asia",0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1982,T-73,Spain,ESP,4,5,1,2,2,5,-1,0.8,1.0,0.2,,1,1982,Spain,24,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1982,T-86,West Germany,DEU,12,10,4,2,1,7,2,1.7142857142857142,1.4285714285714286,0.5714285714285714,2.0,0,1982,Spain,24,Union of European Football Associations,Europe,2.0,8.0,0.0,8.0,6.0,6.0,0.9999983333361112,2.0
+WC-1982,T-87,Yugoslavia,YUG,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,1982,Spain,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1986,T-01,Algeria,DZA,1,5,0,2,1,3,-4,0.3333333333333333,1.6666666666666667,0.0,,0,1986,Mexico,24,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1986,T-03,Argentina,ARG,14,5,6,0,1,7,9,2.0,0.7142857142857143,0.8571428571428571,1.0,0,1986,Mexico,24,South American Football Confederation,South America,2.0,12.0,0.0,12.0,0.0,0.0,0.0,1.0
+WC-1986,T-06,Belgium,BEL,12,15,3,3,1,7,-3,1.7142857142857142,2.142857142857143,0.42857142857142855,4.0,0,1986,Mexico,24,Union of European Football Associations,Europe,1.0,8.0,0.0,8.0,5.0,5.0,0.9999980000040001,4.0
+WC-1986,T-09,Brazil,BRA,10,1,4,1,0,5,9,2.0,0.2,0.8,,0,1986,Mexico,24,South American Football Confederation,South America,1.0,3.0,0.0,3.0,5.0,5.0,0.9999980000040001,0.0
+WC-1986,T-10,Bulgaria,BGR,2,6,0,2,2,4,-4,0.5,1.5,0.0,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1986,T-12,Canada,CAN,0,5,0,3,0,3,-5,0.0,1.6666666666666667,0.0,,0,1986,Mexico,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,2.0,1.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-22,Denmark,DNK,10,6,3,1,0,4,4,2.5,1.5,0.75,,0,1986,Mexico,24,Union of European Football Associations,Europe,1.0,4.0,1.0,7.0,0.0,0.0,0.0,0.0
+WC-1986,T-28,England,ENG,7,3,2,2,1,5,4,1.4,0.6,0.4,,0,1986,Mexico,24,Union of European Football Associations,Europe,1.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1986,T-30,France,FRA,12,6,5,1,1,7,6,1.7142857142857142,0.8571428571428571,0.7142857142857143,3.0,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,5.0,5.0,0.9999980000040001,3.0
+WC-1986,T-36,Hungary,HUN,2,9,1,2,0,3,-7,0.6666666666666666,3.0,0.3333333333333333,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1986,T-39,Iraq,IRQ,1,4,0,3,0,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,1986,Mexico,24,Asian Football Confederation,Middle East,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-1986,T-41,Italy,ITA,5,6,1,1,2,4,-1,1.25,1.5,0.25,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1986,T-46,Mexico,MEX,6,2,3,1,1,5,4,1.2,0.4,0.6,,1,1986,Mexico,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,10.0,1.0,13.0,3.0,3.0,0.9999966666777778,0.0
+WC-1986,T-47,Morocco,MAR,3,2,1,1,2,4,1,0.75,0.5,0.25,,0,1986,Mexico,24,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-52,Northern Ireland,NIR,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-55,Paraguay,PRY,4,6,1,1,2,4,-2,1.0,1.5,0.25,,0,1986,Mexico,24,South American Football Confederation,South America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-57,Poland,POL,1,7,1,2,1,4,-6,0.25,1.75,0.25,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-58,Portugal,PRT,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1986,T-64,Scotland,SCO,1,3,0,2,1,3,-2,0.3333333333333333,1.0,0.0,,0,1986,Mexico,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1986,T-71,South Korea,KOR,4,7,0,2,1,3,-3,1.3333333333333333,2.3333333333333335,0.0,,0,1986,Mexico,24,Asian Football Confederation,East Asia,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1986,T-72,Soviet Union,SUN,12,5,2,1,1,4,7,3.0,1.25,0.5,,0,1986,Mexico,24,Union of European Football Associations,"Europe, Asia",0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1986,T-73,Spain,ESP,11,4,3,2,0,5,7,2.2,0.8,0.6,,0,1986,Mexico,24,Union of European Football Associations,Europe,1.0,8.0,0.0,8.0,5.0,5.0,0.9999980000040001,0.0
+WC-1986,T-84,Uruguay,URY,2,8,0,2,2,4,-6,0.5,2.0,0.0,,0,1986,Mexico,24,South American Football Confederation,South America,0.0,12.0,2.0,18.0,0.0,0.0,0.0,0.0
+WC-1986,T-86,West Germany,DEU,8,7,4,2,1,7,1,1.1428571428571428,1.0,0.5714285714285714,2.0,0,1986,Mexico,24,Union of European Football Associations,Europe,1.0,9.0,1.0,12.0,4.0,4.0,0.9999975000062501,2.0
+WC-1990,T-03,Argentina,ARG,5,4,4,2,1,7,1,0.7142857142857143,0.5714285714285714,0.5714285714285714,2.0,0,1990,Italy,24,South American Football Confederation,South America,1.0,23.0,3.0,32.0,9.0,9.0,0.9999988888901234,2.0
+WC-1990,T-05,Austria,AUT,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-1990,T-06,Belgium,BEL,6,4,2,2,0,4,2,1.5,1.0,0.5,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,1.0,1.0,4.0,0.0,0.0,0.0,0.0
+WC-1990,T-09,Brazil,BRA,4,2,3,1,0,4,2,1.0,0.5,0.75,,0,1990,Italy,24,South American Football Confederation,South America,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1990,T-11,Cameroon,CMR,7,9,3,2,0,5,-2,1.4,1.8,0.6,,0,1990,Italy,24,Confederation of African Football,Africa,1.0,15.0,2.0,21.0,0.0,0.0,0.0,0.0
+WC-1990,T-16,Colombia,COL,4,4,1,2,1,4,0,1.0,1.0,0.25,,0,1990,Italy,24,South American Football Confederation,South America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1990,T-17,Costa Rica,CRI,4,6,2,2,0,4,-2,1.0,1.5,0.5,,0,1990,Italy,24,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1990,T-21,Czechoslovakia,CSK,10,5,3,2,0,5,5,2.0,1.0,0.6,,0,1990,Italy,24,Union of European Football Associations,Europe,1.0,13.0,1.0,16.0,0.0,0.0,0.0,0.0
+WC-1990,T-26,Egypt,EGY,1,2,0,1,2,3,-1,0.3333333333333333,0.6666666666666666,0.0,,0,1990,Italy,24,Confederation of African Football,Africa,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1990,T-28,England,ENG,8,6,3,2,2,7,2,1.1428571428571428,0.8571428571428571,0.42857142857142855,4.0,0,1990,Italy,24,Union of European Football Associations,Europe,1.0,6.0,0.0,6.0,5.0,5.0,0.9999980000040001,4.0
+WC-1990,T-41,Italy,ITA,10,2,6,1,0,7,8,1.4285714285714286,0.2857142857142857,0.8571428571428571,3.0,1,1990,Italy,24,Union of European Football Associations,Europe,2.0,6.0,0.0,6.0,5.0,5.0,0.9999980000040001,3.0
+WC-1990,T-48,Netherlands,NLD,3,4,0,1,3,4,-1,0.75,1.0,0.0,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1990,T-60,Republic of Ireland,IRL,2,3,1,1,3,5,-1,0.4,0.6,0.2,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,5.0,5.0,0.9999980000040001,0.0
+WC-1990,T-61,Romania,ROU,4,3,1,2,1,4,1,1.0,0.75,0.25,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,5.0,5.0,0.9999980000040001,0.0
+WC-1990,T-64,Scotland,SCO,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1990,T-71,South Korea,KOR,1,6,0,3,0,3,-5,0.3333333333333333,2.0,0.0,,0,1990,Italy,24,Asian Football Confederation,East Asia,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-1990,T-72,Soviet Union,SUN,4,4,1,2,0,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,1990,Italy,24,Union of European Football Associations,"Europe, Asia",0.0,4.0,1.0,7.0,0.0,0.0,0.0,0.0
+WC-1990,T-73,Spain,ESP,6,4,2,1,1,4,2,1.5,1.0,0.5,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1990,T-74,Sweden,SWE,3,6,0,3,0,3,-3,1.0,2.0,0.0,,0,1990,Italy,24,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1990,T-82,United Arab Emirates,ARE,2,11,0,3,0,3,-9,0.6666666666666666,3.6666666666666665,0.0,,0,1990,Italy,24,Asian Football Confederation,Middle East,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-1990,T-83,United States,USA,2,8,0,3,0,3,-6,0.6666666666666666,2.6666666666666665,0.0,,0,1990,Italy,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1990,T-84,Uruguay,URY,2,5,1,2,1,4,-3,0.5,1.25,0.25,,0,1990,Italy,24,South American Football Confederation,South America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-1990,T-86,West Germany,DEU,15,5,6,0,1,7,10,2.142857142857143,0.7142857142857143,0.8571428571428571,1.0,0,1990,Italy,24,Union of European Football Associations,Europe,1.0,8.0,1.0,11.0,4.0,4.0,0.9999975000062501,1.0
+WC-1990,T-87,Yugoslavia,YUG,8,6,3,2,0,5,2,1.6,1.2,0.6,,0,1990,Italy,24,Union of European Football Associations,Europe,1.0,8.0,1.0,11.0,5.0,5.0,0.9999980000040001,0.0
+WC-1991,T-09,Brazil,BRA,1,7,1,2,0,3,-6,0.3333333333333333,2.3333333333333335,0.3333333333333333,,0,1991,China,12,South American Football Confederation,South America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1991,T-14,China,CHN,10,4,2,1,1,4,6,2.5,1.0,0.5,,1,1991,China,12,Asian Football Confederation,East Asia,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1991,T-15,Chinese Taipei,TWN,2,15,1,3,0,4,-13,0.5,3.75,0.25,,0,1991,China,12,Asian Football Confederation,East Asia,0.0,2.0,1.0,5.0,0.0,0.0,0.0,0.0
+WC-1991,T-22,Denmark,DNK,7,6,1,2,1,4,1,1.75,1.5,0.25,,0,1991,China,12,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1991,T-31,Germany,DEU,13,10,4,2,0,6,3,2.1666666666666665,1.6666666666666667,0.6666666666666666,4.0,0,1991,China,12,Union of European Football Associations,Europe,1.0,3.0,0.0,3.0,0.0,0.0,0.0,4.0
+WC-1991,T-41,Italy,ITA,8,5,2,2,0,4,3,2.0,1.25,0.5,,0,1991,China,12,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1991,T-44,Japan,JPN,0,12,0,3,0,3,-12,0.0,4.0,0.0,,0,1991,China,12,Asian Football Confederation,East Asia,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-1991,T-49,New Zealand,NZL,1,11,0,3,0,3,-10,0.3333333333333333,3.6666666666666665,0.0,,0,1991,China,12,Oceania Football Confederation,Oceania,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1991,T-50,Nigeria,NGA,0,7,0,3,0,3,-7,0.0,2.3333333333333335,0.0,,0,1991,China,12,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-1991,T-53,Norway,NOR,14,10,4,2,0,6,4,2.3333333333333335,1.6666666666666667,0.6666666666666666,2.0,0,1991,China,12,Union of European Football Associations,Europe,2.0,4.0,0.0,4.0,0.0,0.0,0.0,2.0
+WC-1991,T-74,Sweden,SWE,18,7,4,2,0,6,11,3.0,1.1666666666666667,0.6666666666666666,3.0,0,1991,China,12,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,3.0
+WC-1991,T-83,United States,USA,25,5,6,0,0,6,20,4.166666666666667,0.8333333333333334,1.0,1.0,0,1991,China,12,"Confederation of North, Central American and Caribbean Association Football",North America,4.0,4.0,0.0,4.0,0.0,0.0,0.0,1.0
+WC-1994,T-03,Argentina,ARG,8,6,2,2,0,4,2,2.0,1.5,0.5,,0,1994,United States,24,South American Football Confederation,South America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-1994,T-06,Belgium,BEL,4,4,2,2,0,4,0,1.0,1.0,0.5,,0,1994,United States,24,Union of European Football Associations,Europe,1.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1994,T-07,Bolivia,BOL,1,4,0,2,1,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,1994,United States,24,South American Football Confederation,South America,0.0,8.0,2.0,14.0,0.0,0.0,0.0,0.0
+WC-1994,T-09,Brazil,BRA,11,3,6,0,1,7,8,1.5714285714285714,0.42857142857142855,0.8571428571428571,1.0,0,1994,United States,24,South American Football Confederation,South America,2.0,9.0,1.0,12.0,4.0,4.0,0.9999975000062501,1.0
+WC-1994,T-10,Bulgaria,BGR,10,11,4,3,0,7,-1,1.4285714285714286,1.5714285714285714,0.5714285714285714,4.0,0,1994,United States,24,Union of European Football Associations,Europe,2.0,21.0,2.0,27.0,4.0,4.0,0.9999975000062501,4.0
+WC-1994,T-11,Cameroon,CMR,3,11,0,2,1,3,-8,1.0,3.6666666666666665,0.0,,0,1994,United States,24,Confederation of African Football,Africa,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-1994,T-16,Colombia,COL,4,5,1,2,0,3,-1,1.3333333333333333,1.6666666666666667,0.3333333333333333,,0,1994,United States,24,South American Football Confederation,South America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1994,T-31,Germany,DEU,9,7,3,1,1,5,2,1.8,1.4,0.6,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,13.0,0.0,13.0,0.0,0.0,0.0,0.0
+WC-1994,T-33,Greece,GRC,0,10,0,3,0,3,-10,0.0,3.3333333333333335,0.0,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1994,T-41,Italy,ITA,8,5,4,2,1,7,3,1.1428571428571428,0.7142857142857143,0.5714285714285714,2.0,0,1994,United States,24,Union of European Football Associations,Europe,1.0,13.0,2.0,19.0,5.0,5.0,0.9999980000040001,2.0
+WC-1994,T-46,Mexico,MEX,4,4,1,2,1,4,0,1.0,1.0,0.25,,0,1994,United States,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,10.0,1.0,13.0,4.0,4.0,0.9999975000062501,0.0
+WC-1994,T-47,Morocco,MAR,2,5,0,3,0,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,1994,United States,24,Confederation of African Football,Africa,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-1994,T-48,Netherlands,NLD,8,6,3,2,0,5,2,1.6,1.2,0.6,,0,1994,United States,24,Union of European Football Associations,Europe,1.0,12.0,0.0,12.0,0.0,0.0,0.0,0.0
+WC-1994,T-50,Nigeria,NGA,7,4,2,2,0,4,3,1.75,1.0,0.5,,0,1994,United States,24,Confederation of African Football,Africa,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-1994,T-53,Norway,NOR,1,1,1,1,1,3,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1994,T-60,Republic of Ireland,IRL,2,4,1,2,1,4,-2,0.5,1.0,0.25,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1994,T-61,Romania,ROU,10,9,3,2,0,5,1,2.0,1.8,0.6,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,13.0,1.0,16.0,6.0,6.0,0.9999983333361112,0.0
+WC-1994,T-62,Russia,RUS,7,6,1,2,0,3,1,2.3333333333333335,2.0,0.3333333333333333,,0,1994,United States,24,Union of European Football Associations,"Europe, Asia",1.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1994,T-63,Saudi Arabia,SAU,5,6,2,2,0,4,-1,1.25,1.5,0.5,,0,1994,United States,24,Asian Football Confederation,Middle East,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-1994,T-71,South Korea,KOR,4,5,0,1,2,3,-1,1.3333333333333333,1.6666666666666667,0.0,,0,1994,United States,24,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1994,T-73,Spain,ESP,10,6,2,1,2,5,4,2.0,1.2,0.4,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,14.0,1.0,17.0,0.0,0.0,0.0,0.0
+WC-1994,T-74,Sweden,SWE,15,8,4,1,2,7,7,2.142857142857143,1.1428571428571428,0.5714285714285714,3.0,0,1994,United States,24,Union of European Football Associations,Europe,1.0,14.0,2.0,20.0,6.0,6.0,0.9999983333361112,3.0
+WC-1994,T-75,Switzerland,CHE,5,7,1,2,1,4,-2,1.25,1.75,0.25,,0,1994,United States,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1994,T-83,United States,USA,3,4,1,2,1,4,-1,0.75,1.0,0.25,,1,1994,United States,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1995,T-04,Australia,AUS,3,13,0,3,0,3,-10,1.0,4.333333333333333,0.0,,0,1995,Sweden,12,Asian Football Confederation,Oceania,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-1995,T-09,Brazil,BRA,3,8,1,2,0,3,-5,1.0,2.6666666666666665,0.3333333333333333,,0,1995,Sweden,12,South American Football Confederation,South America,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1995,T-12,Canada,CAN,5,13,0,2,1,3,-8,1.6666666666666667,4.333333333333333,0.0,,0,1995,Sweden,12,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1995,T-14,China,CHN,11,10,3,2,1,6,1,1.8333333333333333,1.6666666666666667,0.5,4.0,0,1995,Sweden,12,Asian Football Confederation,East Asia,1.0,7.0,0.0,7.0,5.0,5.0,0.9999980000040001,4.0
+WC-1995,T-22,Denmark,DNK,7,8,1,3,0,4,-1,1.75,2.0,0.25,,0,1995,Sweden,12,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1995,T-28,England,ENG,6,9,2,2,0,4,-3,1.5,2.25,0.5,,0,1995,Sweden,12,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1995,T-31,Germany,DEU,13,6,4,2,0,6,7,2.1666666666666665,1.0,0.6666666666666666,2.0,0,1995,Sweden,12,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,2.0
+WC-1995,T-44,Japan,JPN,2,8,1,3,0,4,-6,0.5,2.0,0.25,,0,1995,Sweden,12,Asian Football Confederation,East Asia,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1995,T-50,Nigeria,NGA,5,14,0,2,1,3,-9,1.6666666666666667,4.666666666666667,0.0,,0,1995,Sweden,12,Confederation of African Football,Africa,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1995,T-53,Norway,NOR,23,1,6,0,0,6,22,3.8333333333333335,0.16666666666666666,1.0,1.0,0,1995,Sweden,12,Union of European Football Associations,Europe,5.0,7.0,1.0,10.0,0.0,0.0,0.0,1.0
+WC-1995,T-74,Sweden,SWE,6,4,2,2,0,4,2,1.5,1.0,0.5,,1,1995,Sweden,12,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,5.0,5.0,0.9999980000040001,0.0
+WC-1995,T-83,United States,USA,15,5,4,1,1,6,10,2.5,0.8333333333333334,0.6666666666666666,3.0,0,1995,Sweden,12,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,5.0,1.0,8.0,0.0,0.0,0.0,3.0
+WC-1998,T-03,Argentina,ARG,10,4,4,1,0,5,6,2.0,0.8,0.8,,0,1998,France,32,South American Football Confederation,South America,1.0,11.0,1.0,14.0,5.0,5.0,0.9999980000040001,0.0
+WC-1998,T-05,Austria,AUT,3,4,0,1,2,3,-1,1.0,1.3333333333333333,0.0,,0,1998,France,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-1998,T-06,Belgium,BEL,3,3,0,0,3,3,0,1.0,1.0,0.0,,0,1998,France,32,Union of European Football Associations,Europe,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-09,Brazil,BRA,14,10,5,2,0,7,4,2.0,1.4285714285714286,0.7142857142857143,2.0,0,1998,France,32,South American Football Confederation,South America,1.0,12.0,0.0,12.0,4.0,4.0,0.9999975000062501,2.0
+WC-1998,T-10,Bulgaria,BGR,1,7,0,2,1,3,-6,0.3333333333333333,2.3333333333333335,0.0,,0,1998,France,32,Union of European Football Associations,Europe,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-1998,T-11,Cameroon,CMR,2,5,0,1,2,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,1998,France,32,Confederation of African Football,Africa,0.0,8.0,3.0,17.0,0.0,0.0,0.0,0.0
+WC-1998,T-13,Chile,CHL,5,8,0,1,3,4,-3,1.25,2.0,0.0,,0,1998,France,32,South American Football Confederation,South America,0.0,13.0,0.0,13.0,0.0,0.0,0.0,0.0
+WC-1998,T-16,Colombia,COL,1,3,1,2,0,3,-2,0.3333333333333333,1.0,0.3333333333333333,,0,1998,France,32,South American Football Confederation,South America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-1998,T-18,Croatia,HRV,11,5,5,2,0,7,6,1.5714285714285714,0.7142857142857143,0.7142857142857143,3.0,0,1998,France,32,Union of European Football Associations,Europe,2.0,19.0,0.0,19.0,0.0,0.0,0.0,3.0
+WC-1998,T-22,Denmark,DNK,9,7,2,2,1,5,2,1.8,1.4,0.4,,0,1998,France,32,Union of European Football Associations,Europe,0.0,14.0,2.0,20.0,0.0,0.0,0.0,0.0
+WC-1998,T-28,England,ENG,7,4,2,2,0,4,3,1.75,1.0,0.5,,0,1998,France,32,Union of European Football Associations,Europe,1.0,6.0,1.0,9.0,5.0,5.0,0.9999980000040001,0.0
+WC-1998,T-30,France,FRA,15,2,7,0,0,7,13,2.142857142857143,0.2857142857142857,1.0,1.0,1,1998,France,32,Union of European Football Associations,Europe,2.0,14.0,3.0,23.0,5.0,5.0,0.9999980000040001,1.0
+WC-1998,T-31,Germany,DEU,8,6,3,1,1,5,2,1.6,1.2,0.6,,0,1998,France,32,Union of European Football Associations,Europe,0.0,13.0,1.0,16.0,0.0,0.0,0.0,0.0
+WC-1998,T-38,Iran,IRN,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,1998,France,32,Asian Football Confederation,Middle East,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-1998,T-41,Italy,ITA,8,3,3,1,1,5,5,1.6,0.6,0.6,,0,1998,France,32,Union of European Football Associations,Europe,1.0,11.0,0.0,11.0,5.0,5.0,0.9999980000040001,0.0
+WC-1998,T-43,Jamaica,JAM,3,9,1,2,0,3,-6,1.0,3.0,0.3333333333333333,,0,1998,France,32,"Confederation of North, Central American and Caribbean Association Football",Caribbean,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-44,Japan,JPN,1,4,0,3,0,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,1998,France,32,Asian Football Confederation,East Asia,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1998,T-46,Mexico,MEX,8,7,1,1,2,4,1,2.0,1.75,0.25,,0,1998,France,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,12.0,2.0,18.0,0.0,0.0,0.0,0.0
+WC-1998,T-47,Morocco,MAR,5,5,1,1,1,3,0,1.6666666666666667,1.6666666666666667,0.3333333333333333,,0,1998,France,32,Confederation of African Football,Africa,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1998,T-48,Netherlands,NLD,13,7,3,2,2,7,6,1.8571428571428572,1.0,0.42857142857142855,4.0,0,1998,France,32,Union of European Football Associations,Europe,0.0,11.0,2.0,17.0,4.0,4.0,0.9999975000062501,4.0
+WC-1998,T-50,Nigeria,NGA,6,9,2,2,0,4,-3,1.5,2.25,0.5,,0,1998,France,32,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-53,Norway,NOR,5,5,1,1,2,4,0,1.25,1.25,0.25,,0,1998,France,32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1998,T-55,Paraguay,PRY,3,2,1,1,2,4,1,0.75,0.5,0.25,,0,1998,France,32,South American Football Confederation,South America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-61,Romania,ROU,4,3,2,1,1,4,1,1.0,0.75,0.5,,0,1998,France,32,Union of European Football Associations,Europe,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-1998,T-63,Saudi Arabia,SAU,2,7,0,2,1,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,1998,France,32,Asian Football Confederation,Middle East,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-64,Scotland,SCO,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,1998,France,32,Union of European Football Associations,Europe,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-1998,T-70,South Africa,ZAF,3,6,0,1,2,3,-3,1.0,2.0,0.0,,0,1998,France,32,Confederation of African Football,Africa,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-1998,T-71,South Korea,KOR,2,9,0,2,1,3,-7,0.6666666666666666,3.0,0.0,,0,1998,France,32,Asian Football Confederation,East Asia,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-1998,T-73,Spain,ESP,8,4,1,1,1,3,4,2.6666666666666665,1.3333333333333333,0.3333333333333333,,0,1998,France,32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1998,T-79,Tunisia,TUN,1,4,0,2,1,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,1998,France,32,Confederation of African Football,Africa,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1998,T-83,United States,USA,1,5,0,3,0,3,-4,0.3333333333333333,1.6666666666666667,0.0,,0,1998,France,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-1998,T-87,Yugoslavia,YUG,5,4,2,1,1,4,1,1.25,1.0,0.5,,0,1998,France,32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-1999,T-04,Australia,AUS,3,7,0,2,1,3,-4,1.0,2.3333333333333335,0.0,,0,1999,United States,16,Asian Football Confederation,Oceania,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-09,Brazil,BRA,16,9,4,1,1,6,7,2.6666666666666665,1.5,0.6666666666666666,3.0,0,1999,United States,16,South American Football Confederation,South America,2.0,0.0,0.0,0.0,6.0,6.0,0.9999983333361112,3.0
+WC-1999,T-12,Canada,CAN,3,12,0,2,1,3,-9,1.0,4.0,0.0,,0,1999,United States,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-14,China,CHN,19,2,5,1,0,6,17,3.1666666666666665,0.3333333333333333,0.8333333333333334,2.0,0,1999,United States,16,Asian Football Confederation,East Asia,3.0,0.0,0.0,0.0,5.0,5.0,0.9999980000040001,2.0
+WC-1999,T-22,Denmark,DNK,1,8,0,3,0,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,1999,United States,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-31,Germany,DEU,12,7,1,1,2,4,5,3.0,1.75,0.25,,0,1999,United States,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-32,Ghana,GHA,1,10,0,2,1,3,-9,0.3333333333333333,3.3333333333333335,0.0,,0,1999,United States,16,Confederation of African Football,Africa,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-41,Italy,ITA,3,3,1,1,1,3,0,1.0,1.0,0.3333333333333333,,0,1999,United States,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-44,Japan,JPN,1,10,0,2,1,3,-9,0.3333333333333333,3.3333333333333335,0.0,,0,1999,United States,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-46,Mexico,MEX,1,15,0,3,0,3,-14,0.3333333333333333,5.0,0.0,,0,1999,United States,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-50,Nigeria,NGA,8,12,2,2,0,4,-4,2.0,3.0,0.5,,0,1999,United States,16,Confederation of African Football,Africa,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-51,North Korea,PRK,4,6,1,2,0,3,-2,1.3333333333333333,2.0,0.3333333333333333,,0,1999,United States,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-53,Norway,NOR,16,8,4,2,0,6,8,2.6666666666666665,1.3333333333333333,0.6666666666666666,4.0,0,1999,United States,16,Union of European Football Associations,Europe,1.0,0.0,0.0,0.0,6.0,6.0,0.9999983333361112,4.0
+WC-1999,T-62,Russia,RUS,10,5,2,2,0,4,5,2.5,1.25,0.5,,0,1999,United States,16,Union of European Football Associations,"Europe, Asia",0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-74,Sweden,SWE,7,6,2,2,0,4,1,1.75,1.5,0.5,,0,1999,United States,16,Union of European Football Associations,Europe,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-1999,T-83,United States,USA,18,3,6,0,0,6,15,3.0,0.5,1.0,1.0,1,1999,United States,16,"Confederation of North, Central American and Caribbean Association Football",North America,2.0,0.0,0.0,0.0,5.0,5.0,0.9999980000040001,1.0
+WC-2002,T-03,Argentina,ARG,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,2002,"Korea, Japan",32,South American Football Confederation,South America,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-2002,T-06,Belgium,BEL,6,7,1,1,2,4,-1,1.5,1.75,0.25,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2002,T-09,Brazil,BRA,18,4,7,0,0,7,14,2.5714285714285716,0.5714285714285714,1.0,1.0,0,2002,"Korea, Japan",32,South American Football Confederation,South America,3.0,8.0,1.0,11.0,0.0,0.0,0.0,1.0
+WC-2002,T-11,Cameroon,CMR,2,3,1,1,1,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2002,"Korea, Japan",32,Confederation of African Football,Africa,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2002,T-14,China,CHN,0,9,0,3,0,3,-9,0.0,3.0,0.0,,0,2002,"Korea, Japan",32,Asian Football Confederation,East Asia,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2002,T-17,Costa Rica,CRI,5,6,1,1,1,3,-1,1.6666666666666667,2.0,0.3333333333333333,,0,2002,"Korea, Japan",32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2002,T-18,Croatia,HRV,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,4.0,1.0,7.0,0.0,0.0,0.0,0.0
+WC-2002,T-22,Denmark,DNK,5,5,2,1,1,4,0,1.25,1.25,0.5,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2002,T-25,Ecuador,ECU,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,2002,"Korea, Japan",32,South American Football Confederation,South America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2002,T-28,England,ENG,6,3,2,1,2,5,3,1.2,0.6,0.4,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2002,T-30,France,FRA,0,3,0,2,1,3,-3,0.0,1.0,0.0,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,4.0,1.0,7.0,0.0,0.0,0.0,0.0
+WC-2002,T-31,Germany,DEU,14,3,5,1,1,7,11,2.0,0.42857142857142855,0.7142857142857143,2.0,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,3.0,17.0,1.0,20.0,0.0,0.0,0.0,2.0
+WC-2002,T-41,Italy,ITA,5,5,1,2,1,4,0,1.25,1.25,0.25,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,11.0,1.0,14.0,0.0,0.0,0.0,0.0
+WC-2002,T-44,Japan,JPN,5,3,2,1,1,4,2,1.25,0.75,0.5,,1,2002,"Korea, Japan",32,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2002,T-46,Mexico,MEX,4,4,2,1,1,4,0,1.0,1.0,0.5,,0,2002,"Korea, Japan",32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2002,T-50,Nigeria,NGA,1,3,0,2,1,3,-2,0.3333333333333333,1.0,0.0,,0,2002,"Korea, Japan",32,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2002,T-55,Paraguay,PRY,6,7,1,2,1,4,-1,1.5,1.75,0.25,,0,2002,"Korea, Japan",32,South American Football Confederation,South America,0.0,10.0,2.0,16.0,0.0,0.0,0.0,0.0
+WC-2002,T-57,Poland,POL,3,7,1,2,0,3,-4,1.0,2.3333333333333335,0.3333333333333333,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2002,T-58,Portugal,PRT,6,4,1,2,0,3,2,2.0,1.3333333333333333,0.3333333333333333,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,8.0,2.0,14.0,0.0,0.0,0.0,0.0
+WC-2002,T-60,Republic of Ireland,IRL,6,3,1,1,2,4,3,1.5,0.75,0.25,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,5.0,5.0,0.9999980000040001,0.0
+WC-2002,T-62,Russia,RUS,4,4,1,2,0,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,2002,"Korea, Japan",32,Union of European Football Associations,"Europe, Asia",0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2002,T-63,Saudi Arabia,SAU,0,12,0,3,0,3,-12,0.0,4.0,0.0,,0,2002,"Korea, Japan",32,Asian Football Confederation,Middle East,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2002,T-65,Senegal,SEN,7,6,2,1,2,5,1,1.4,1.2,0.4,,0,2002,"Korea, Japan",32,Confederation of African Football,Africa,0.0,14.0,1.0,17.0,0.0,0.0,0.0,0.0
+WC-2002,T-69,Slovenia,SVN,2,7,0,3,0,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,11.0,1.0,14.0,0.0,0.0,0.0,0.0
+WC-2002,T-70,South Africa,ZAF,5,5,1,1,1,3,0,1.6666666666666667,1.6666666666666667,0.3333333333333333,,0,2002,"Korea, Japan",32,Confederation of African Football,Africa,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-2002,T-71,South Korea,KOR,8,6,4,2,1,7,2,1.1428571428571428,0.8571428571428571,0.5714285714285714,4.0,1,2002,"Korea, Japan",32,Asian Football Confederation,East Asia,1.0,14.0,0.0,14.0,5.0,5.0,0.9999980000040001,4.0
+WC-2002,T-73,Spain,ESP,10,5,4,1,0,5,5,2.0,1.0,0.8,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,9.0,9.0,0.9999988888901234,0.0
+WC-2002,T-74,Sweden,SWE,5,5,1,1,2,4,0,1.25,1.25,0.25,,0,2002,"Korea, Japan",32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2002,T-79,Tunisia,TUN,1,5,0,2,1,3,-4,0.3333333333333333,1.6666666666666667,0.0,,0,2002,"Korea, Japan",32,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2002,T-80,Turkey,TUR,10,6,4,2,1,7,4,1.4285714285714286,0.8571428571428571,0.5714285714285714,3.0,0,2002,"Korea, Japan",32,Union of European Football Associations,"Europe, Asia",0.0,18.0,2.0,24.0,0.0,0.0,0.0,3.0
+WC-2002,T-83,United States,USA,7,7,2,2,1,5,0,1.4,1.4,0.4,,0,2002,"Korea, Japan",32,"Confederation of North, Central American and Caribbean Association Football",North America,1.0,14.0,0.0,14.0,0.0,0.0,0.0,0.0
+WC-2002,T-84,Uruguay,URY,4,5,0,1,2,3,-1,1.3333333333333333,1.6666666666666667,0.0,,0,2002,"Korea, Japan",32,South American Football Confederation,South America,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-2003,T-03,Argentina,ARG,1,15,0,3,0,3,-14,0.3333333333333333,5.0,0.0,,0,2003,United States,16,South American Football Confederation,South America,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-2003,T-04,Australia,AUS,3,5,0,2,1,3,-2,1.0,1.6666666666666667,0.0,,0,2003,United States,16,Asian Football Confederation,Oceania,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2003,T-09,Brazil,BRA,9,4,2,1,1,4,5,2.25,1.0,0.5,,0,2003,United States,16,South American Football Confederation,South America,1.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2003,T-12,Canada,CAN,10,10,3,3,0,6,0,1.6666666666666667,1.6666666666666667,0.5,4.0,0,2003,United States,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,11.0,0.0,11.0,0.0,0.0,0.0,4.0
+WC-2003,T-14,China,CHN,3,2,2,1,1,4,1,0.75,0.5,0.5,,0,2003,United States,16,Asian Football Confederation,East Asia,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2003,T-30,France,FRA,2,3,1,1,1,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2003,United States,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2003,T-31,Germany,DEU,25,4,6,0,0,6,21,4.166666666666667,0.6666666666666666,1.0,1.0,0,2003,United States,16,Union of European Football Associations,Europe,5.0,4.0,0.0,4.0,0.0,0.0,0.0,1.0
+WC-2003,T-32,Ghana,GHA,2,5,1,2,0,3,-3,0.6666666666666666,1.6666666666666667,0.3333333333333333,,0,2003,United States,16,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2003,T-44,Japan,JPN,7,6,1,2,0,3,1,2.3333333333333335,2.0,0.3333333333333333,,0,2003,United States,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-2003,T-50,Nigeria,NGA,0,11,0,3,0,3,-11,0.0,3.6666666666666665,0.0,,0,2003,United States,16,Confederation of African Football,Africa,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2003,T-51,North Korea,PRK,3,4,1,2,0,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2003,United States,16,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2003,T-53,Norway,NOR,10,6,2,2,0,4,4,2.5,1.5,0.5,,0,2003,United States,16,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2003,T-62,Russia,RUS,6,9,2,2,0,4,-3,1.5,2.25,0.5,,0,2003,United States,16,Union of European Football Associations,"Europe, Asia",0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2003,T-71,South Korea,KOR,1,11,0,3,0,3,-10,0.3333333333333333,3.6666666666666665,0.0,,0,2003,United States,16,Asian Football Confederation,East Asia,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2003,T-74,Sweden,SWE,10,7,4,2,0,6,3,1.6666666666666667,1.1666666666666667,0.6666666666666666,2.0,0,2003,United States,16,Union of European Football Associations,Europe,1.0,5.0,0.0,5.0,0.0,0.0,0.0,2.0
+WC-2003,T-83,United States,USA,15,5,5,1,0,6,10,2.5,0.8333333333333334,0.8333333333333334,3.0,1,2003,United States,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,3.0
+WC-2006,T-02,Angola,AGO,1,2,0,1,2,3,-1,0.3333333333333333,0.6666666666666666,0.0,,0,2006,Germany,32,Confederation of African Football,Africa,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-2006,T-03,Argentina,ARG,11,3,3,1,1,5,8,2.2,0.6,0.6,,0,2006,Germany,32,South American Football Confederation,South America,1.0,13.0,1.0,16.0,4.0,4.0,0.9999975000062501,0.0
+WC-2006,T-04,Australia,AUS,5,6,1,2,1,4,-1,1.25,1.5,0.25,,0,2006,Germany,32,Asian Football Confederation,Oceania,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-2006,T-09,Brazil,BRA,10,2,4,1,0,5,8,2.0,0.4,0.8,,0,2006,Germany,32,South American Football Confederation,South America,1.0,11.0,0.0,11.0,0.0,0.0,0.0,0.0
+WC-2006,T-17,Costa Rica,CRI,3,9,0,3,0,3,-6,1.0,3.0,0.0,,0,2006,Germany,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2006,T-18,Croatia,HRV,2,3,0,1,2,3,-1,0.6666666666666666,1.0,0.0,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,9.0,2.0,15.0,0.0,0.0,0.0,0.0
+WC-2006,T-20,Czech Republic,CZE,3,4,1,2,0,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,7.0,2.0,13.0,0.0,0.0,0.0,0.0
+WC-2006,T-25,Ecuador,ECU,5,4,2,2,0,4,1,1.25,1.0,0.5,,0,2006,Germany,32,South American Football Confederation,South America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2006,T-28,England,ENG,6,2,3,1,1,5,4,1.2,0.4,0.6,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,10.0,1.0,13.0,4.0,4.0,0.9999975000062501,0.0
+WC-2006,T-30,France,FRA,9,3,4,1,2,7,6,1.2857142857142858,0.42857142857142855,0.5714285714285714,2.0,0,2006,Germany,32,Union of European Football Associations,Europe,1.0,17.0,1.0,20.0,4.0,4.0,0.9999975000062501,2.0
+WC-2006,T-31,Germany,DEU,14,6,6,1,0,7,8,2.0,0.8571428571428571,0.8571428571428571,3.0,1,2006,Germany,32,Union of European Football Associations,Europe,2.0,12.0,0.0,12.0,4.0,4.0,0.9999975000062501,3.0
+WC-2006,T-32,Ghana,GHA,4,6,2,2,0,4,-2,1.0,1.5,0.5,,0,2006,Germany,32,Confederation of African Football,Africa,0.0,17.0,1.0,20.0,0.0,0.0,0.0,0.0
+WC-2006,T-38,Iran,IRN,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,2006,Germany,32,Asian Football Confederation,Middle East,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2006,T-41,Italy,ITA,12,2,6,0,1,7,10,1.7142857142857142,0.2857142857142857,0.8571428571428571,1.0,0,2006,Germany,32,Union of European Football Associations,Europe,3.0,13.0,2.0,19.0,5.0,5.0,0.9999980000040001,1.0
+WC-2006,T-42,Ivory Coast,CIV,5,6,1,2,0,3,-1,1.6666666666666667,2.0,0.3333333333333333,,0,2006,Germany,32,Confederation of African Football,Africa,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-2006,T-44,Japan,JPN,2,7,0,2,1,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,2006,Germany,32,Asian Football Confederation,East Asia,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2006,T-46,Mexico,MEX,5,5,1,2,1,4,0,1.25,1.25,0.25,,0,2006,Germany,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,11.0,1.0,14.0,0.0,0.0,0.0,0.0
+WC-2006,T-48,Netherlands,NLD,3,2,2,1,1,4,1,0.75,0.5,0.5,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,14.0,2.0,20.0,0.0,0.0,0.0,0.0
+WC-2006,T-55,Paraguay,PRY,2,2,1,2,0,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,2006,Germany,32,South American Football Confederation,South America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2006,T-57,Poland,POL,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2006,T-58,Portugal,PRT,7,5,5,2,0,7,2,1.0,0.7142857142857143,0.7142857142857143,4.0,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,22.0,2.0,28.0,5.0,5.0,0.9999980000040001,4.0
+WC-2006,T-63,Saudi Arabia,SAU,2,7,0,2,1,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,2006,Germany,32,Asian Football Confederation,Middle East,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2006,T-67,Serbia and Montenegro,SCG,2,10,0,3,0,3,-8,0.6666666666666666,3.3333333333333335,0.0,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,12.0,2.0,18.0,0.0,0.0,0.0,0.0
+WC-2006,T-71,South Korea,KOR,3,4,1,1,1,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2006,Germany,32,Asian Football Confederation,East Asia,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2006,T-73,Spain,ESP,9,4,3,1,0,4,5,2.25,1.0,0.75,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2006,T-74,Sweden,SWE,3,4,1,1,2,4,-1,0.75,1.0,0.25,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2006,T-75,Switzerland,CHE,4,0,2,1,1,4,4,1.0,0.0,0.5,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,12.0,0.0,12.0,3.0,3.0,0.9999966666777778,0.0
+WC-2006,T-77,Togo,TGO,1,6,0,3,0,3,-5,0.3333333333333333,2.0,0.0,,0,2006,Germany,32,Confederation of African Football,Africa,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2006,T-78,Trinidad and Tobago,TTO,0,4,0,2,1,3,-4,0.0,1.3333333333333333,0.0,,0,2006,Germany,32,"Confederation of North, Central American and Caribbean Association Football",Caribbean,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2006,T-79,Tunisia,TUN,3,6,0,2,1,3,-3,1.0,2.0,0.0,,0,2006,Germany,32,Confederation of African Football,Africa,0.0,13.0,1.0,16.0,0.0,0.0,0.0,0.0
+WC-2006,T-81,Ukraine,UKR,5,7,3,2,0,5,-2,1.0,1.4,0.6,,0,2006,Germany,32,Union of European Football Associations,Europe,0.0,13.0,1.0,16.0,4.0,4.0,0.9999975000062501,0.0
+WC-2006,T-83,United States,USA,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,2006,Germany,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,5.0,2.0,11.0,0.0,0.0,0.0,0.0
+WC-2007,T-03,Argentina,ARG,1,18,0,3,0,3,-17,0.3333333333333333,6.0,0.0,,0,2007,China,16,South American Football Confederation,South America,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2007,T-04,Australia,AUS,9,7,1,1,2,4,2,2.25,1.75,0.25,,0,2007,China,16,Asian Football Confederation,Oceania,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2007,T-09,Brazil,BRA,17,4,5,1,0,6,13,2.8333333333333335,0.6666666666666666,0.8333333333333334,2.0,0,2007,China,16,South American Football Confederation,South America,3.0,7.0,0.0,7.0,0.0,0.0,0.0,2.0
+WC-2007,T-12,Canada,CAN,7,4,1,1,1,3,3,2.3333333333333335,1.3333333333333333,0.3333333333333333,,0,2007,China,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2007,T-14,China,CHN,5,7,2,2,0,4,-2,1.25,1.75,0.5,,1,2007,China,16,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2007,T-22,Denmark,DNK,4,4,1,2,0,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,2007,China,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2007,T-28,England,ENG,8,6,1,1,2,4,2,2.0,1.5,0.25,,0,2007,China,16,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2007,T-31,Germany,DEU,21,0,5,0,1,6,21,3.5,0.0,0.8333333333333334,1.0,0,2007,China,16,Union of European Football Associations,Europe,2.0,9.0,0.0,9.0,0.0,0.0,0.0,1.0
+WC-2007,T-32,Ghana,GHA,3,15,0,3,0,3,-12,1.0,5.0,0.0,,0,2007,China,16,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2007,T-44,Japan,JPN,3,4,1,1,1,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2007,China,16,Asian Football Confederation,East Asia,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2007,T-49,New Zealand,NZL,0,9,0,3,0,3,-9,0.0,3.0,0.0,,0,2007,China,16,Oceania Football Confederation,Oceania,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2007,T-50,Nigeria,NGA,1,4,0,2,1,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,2007,China,16,Confederation of African Football,Africa,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2007,T-51,North Korea,PRK,5,7,1,2,1,4,-2,1.25,1.75,0.25,,0,2007,China,16,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2007,T-53,Norway,NOR,12,11,3,2,1,6,1,2.0,1.8333333333333333,0.5,4.0,0,2007,China,16,Union of European Football Associations,Europe,1.0,4.0,0.0,4.0,0.0,0.0,0.0,4.0
+WC-2007,T-74,Sweden,SWE,3,4,1,1,1,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2007,China,16,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2007,T-83,United States,USA,12,7,4,1,1,6,5,2.0,1.1666666666666667,0.6666666666666666,3.0,0,2007,China,16,"Confederation of North, Central American and Caribbean Association Football",North America,1.0,5.0,1.0,8.0,0.0,0.0,0.0,3.0
+WC-2010,T-01,Algeria,DZA,0,2,0,2,1,3,-2,0.0,0.6666666666666666,0.0,,0,2010,South Africa,32,Confederation of African Football,Africa,0.0,6.0,2.0,12.0,0.0,0.0,0.0,0.0
+WC-2010,T-03,Argentina,ARG,10,6,4,1,0,5,4,2.0,1.2,0.8,,0,2010,South Africa,32,South American Football Confederation,South America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2010,T-04,Australia,AUS,3,6,1,1,1,3,-3,1.0,2.0,0.3333333333333333,,0,2010,South Africa,32,Asian Football Confederation,Oceania,0.0,9.0,2.0,15.0,0.0,0.0,0.0,0.0
+WC-2010,T-09,Brazil,BRA,9,4,3,1,1,5,5,1.8,0.8,0.6,,0,2010,South Africa,32,South American Football Confederation,South America,0.0,9.0,2.0,15.0,0.0,0.0,0.0,0.0
+WC-2010,T-11,Cameroon,CMR,2,5,0,3,0,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,2010,South Africa,32,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2010,T-13,Chile,CHL,3,5,2,2,0,4,-2,0.75,1.25,0.5,,0,2010,South Africa,32,South American Football Confederation,South America,0.0,14.0,1.0,17.0,0.0,0.0,0.0,0.0
+WC-2010,T-22,Denmark,DNK,3,6,1,2,0,3,-3,1.0,2.0,0.3333333333333333,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2010,T-28,England,ENG,3,5,1,1,2,4,-2,0.75,1.25,0.25,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2010,T-30,France,FRA,1,4,0,2,1,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-2010,T-31,Germany,DEU,16,5,5,2,0,7,11,2.2857142857142856,0.7142857142857143,0.7142857142857143,3.0,0,2010,South Africa,32,Union of European Football Associations,Europe,2.0,12.0,1.0,15.0,0.0,0.0,0.0,3.0
+WC-2010,T-32,Ghana,GHA,5,4,2,2,1,5,1,1.0,0.8,0.4,,0,2010,South Africa,32,Confederation of African Football,Africa,0.0,11.0,0.0,11.0,4.0,4.0,0.9999975000062501,0.0
+WC-2010,T-33,Greece,GRC,2,5,1,2,0,3,-3,0.6666666666666666,1.6666666666666667,0.3333333333333333,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2010,T-35,Honduras,HND,0,3,0,2,1,3,-3,0.0,1.0,0.0,,0,2010,South Africa,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2010,T-41,Italy,ITA,4,5,0,1,2,3,-1,1.3333333333333333,1.6666666666666667,0.0,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2010,T-42,Ivory Coast,CIV,4,3,1,1,1,3,1,1.3333333333333333,1.0,0.3333333333333333,,0,2010,South Africa,32,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2010,T-44,Japan,JPN,4,2,2,2,0,4,2,1.0,0.5,0.5,,0,2010,South Africa,32,Asian Football Confederation,East Asia,0.0,7.0,0.0,7.0,4.0,4.0,0.9999975000062501,0.0
+WC-2010,T-46,Mexico,MEX,4,5,1,2,1,4,-1,1.0,1.25,0.25,,0,2010,South Africa,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2010,T-48,Netherlands,NLD,12,6,6,1,0,7,6,1.7142857142857142,0.8571428571428571,0.8571428571428571,2.0,0,2010,South Africa,32,Union of European Football Associations,Europe,2.0,23.0,1.0,26.0,0.0,0.0,0.0,2.0
+WC-2010,T-49,New Zealand,NZL,2,2,0,0,3,3,0,0.6666666666666666,0.6666666666666666,0.0,,0,2010,South Africa,32,Oceania Football Confederation,Oceania,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2010,T-50,Nigeria,NGA,3,5,0,2,1,3,-2,1.0,1.6666666666666667,0.0,,0,2010,South Africa,32,Confederation of African Football,Africa,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2010,T-51,North Korea,PRK,1,12,0,3,0,3,-11,0.3333333333333333,4.0,0.0,,0,2010,South Africa,32,Asian Football Confederation,East Asia,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2010,T-55,Paraguay,PRY,3,2,2,1,2,5,1,0.6,0.4,0.4,,0,2010,South Africa,32,South American Football Confederation,South America,0.0,9.0,0.0,9.0,5.0,5.0,0.9999980000040001,0.0
+WC-2010,T-58,Portugal,PRT,7,1,1,1,2,4,6,1.75,0.25,0.25,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2010,T-66,Serbia,SRB,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2010,T-68,Slovakia,SVK,5,7,1,2,1,4,-2,1.25,1.75,0.25,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,12.0,0.0,12.0,0.0,0.0,0.0,0.0
+WC-2010,T-69,Slovenia,SVN,3,3,1,1,1,3,0,1.0,1.0,0.3333333333333333,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2010,T-70,South Africa,ZAF,3,5,1,1,1,3,-2,1.0,1.6666666666666667,0.3333333333333333,,1,2010,South Africa,32,Confederation of African Football,Africa,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-2010,T-71,South Korea,KOR,6,8,1,2,1,4,-2,1.5,2.0,0.25,,0,2010,South Africa,32,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2010,T-73,Spain,ESP,8,2,6,1,0,7,6,1.1428571428571428,0.2857142857142857,0.8571428571428571,1.0,0,2010,South Africa,32,Union of European Football Associations,Europe,3.0,8.0,0.0,8.0,0.0,0.0,0.0,1.0
+WC-2010,T-75,Switzerland,CHE,1,1,1,1,1,3,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,,0,2010,South Africa,32,Union of European Football Associations,Europe,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2010,T-83,United States,USA,5,5,1,1,2,4,0,1.25,1.25,0.25,,0,2010,South Africa,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2010,T-84,Uruguay,URY,11,8,4,2,1,7,3,1.5714285714285714,1.1428571428571428,0.5714285714285714,4.0,0,2010,South Africa,32,South American Football Confederation,South America,1.0,11.0,2.0,17.0,5.0,5.0,0.9999980000040001,4.0
+WC-2011,T-04,Australia,AUS,6,7,2,2,0,4,-1,1.5,1.75,0.5,,0,2011,Germany,16,Asian Football Confederation,Oceania,1.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2011,T-09,Brazil,BRA,9,2,3,1,0,4,7,2.25,0.5,0.75,,0,2011,Germany,16,South American Football Confederation,South America,1.0,7.0,0.0,7.0,4.0,4.0,0.9999975000062501,0.0
+WC-2011,T-12,Canada,CAN,1,7,0,3,0,3,-6,0.3333333333333333,2.3333333333333335,0.0,,0,2011,Germany,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-2011,T-16,Colombia,COL,0,4,0,2,1,3,-4,0.0,1.3333333333333333,0.0,,0,2011,Germany,16,South American Football Confederation,South America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-2011,T-28,England,ENG,6,3,2,1,1,4,3,1.5,0.75,0.5,,0,2011,Germany,16,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,5.0,5.0,0.9999980000040001,0.0
+WC-2011,T-29,Equatorial Guinea,GNQ,2,7,0,3,0,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,2011,Germany,16,Confederation of African Football,Africa,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2011,T-30,France,FRA,10,10,3,3,0,6,0,1.6666666666666667,1.6666666666666667,0.5,4.0,0,2011,Germany,16,Union of European Football Associations,Europe,0.0,6.0,1.0,9.0,5.0,5.0,0.9999980000040001,4.0
+WC-2011,T-31,Germany,DEU,7,4,3,1,0,4,3,1.75,1.0,0.75,,1,2011,Germany,16,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2011,T-44,Japan,JPN,12,6,5,1,0,6,6,2.0,1.0,0.8333333333333334,1.0,0,2011,Germany,16,Asian Football Confederation,East Asia,2.0,4.0,0.0,4.0,4.0,4.0,0.9999975000062501,1.0
+WC-2011,T-46,Mexico,MEX,3,7,0,1,2,3,-4,1.0,2.3333333333333335,0.0,,0,2011,Germany,16,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2011,T-49,New Zealand,NZL,4,6,0,2,1,3,-2,1.3333333333333333,2.0,0.0,,0,2011,Germany,16,Oceania Football Confederation,Oceania,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2011,T-50,Nigeria,NGA,1,2,1,2,0,3,-1,0.3333333333333333,0.6666666666666666,0.3333333333333333,,0,2011,Germany,16,Confederation of African Football,Africa,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2011,T-51,North Korea,PRK,0,3,0,2,1,3,-3,0.0,1.0,0.0,,0,2011,Germany,16,Asian Football Confederation,East Asia,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-2011,T-53,Norway,NOR,2,5,1,2,0,3,-3,0.6666666666666666,1.6666666666666667,0.3333333333333333,,0,2011,Germany,16,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2011,T-74,Sweden,SWE,10,6,5,1,0,6,4,1.6666666666666667,1.0,0.8333333333333334,3.0,0,2011,Germany,16,Union of European Football Associations,Europe,0.0,7.0,1.0,10.0,0.0,0.0,0.0,3.0
+WC-2011,T-83,United States,USA,13,7,4,2,0,6,6,2.1666666666666665,1.1666666666666667,0.6666666666666666,2.0,0,2011,Germany,16,"Confederation of North, Central American and Caribbean Association Football",North America,4.0,7.0,1.0,10.0,9.0,9.0,0.9999988888901234,2.0
+WC-2014,T-01,Algeria,DZA,7,7,1,2,1,4,0,1.75,1.75,0.25,,0,2014,Brazil,32,Confederation of African Football,Africa,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2014,T-03,Argentina,ARG,8,4,6,1,0,7,4,1.1428571428571428,0.5714285714285714,0.8571428571428571,2.0,0,2014,Brazil,32,South American Football Confederation,South America,1.0,8.0,0.0,8.0,4.0,4.0,0.9999975000062501,2.0
+WC-2014,T-04,Australia,AUS,3,9,0,3,0,3,-6,1.0,3.0,0.0,,0,2014,Brazil,32,Asian Football Confederation,Oceania,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2014,T-06,Belgium,BEL,6,3,4,1,0,5,3,1.2,0.6,0.8,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,8.0,1.0,11.0,0.0,0.0,0.0,0.0
+WC-2014,T-08,Bosnia and Herzegovina,BIH,4,4,1,2,0,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2014,T-09,Brazil,BRA,11,14,4,2,1,7,-3,1.5714285714285714,2.0,0.5714285714285714,4.0,1,2014,Brazil,32,South American Football Confederation,South America,1.0,14.0,0.0,14.0,5.0,5.0,0.9999980000040001,4.0
+WC-2014,T-11,Cameroon,CMR,1,9,0,3,0,3,-8,0.3333333333333333,3.0,0.0,,0,2014,Brazil,32,Confederation of African Football,Africa,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-2014,T-13,Chile,CHL,6,4,2,2,0,4,2,1.5,1.0,0.5,,0,2014,Brazil,32,South American Football Confederation,South America,0.0,7.0,0.0,7.0,5.0,5.0,0.9999980000040001,0.0
+WC-2014,T-16,Colombia,COL,12,4,4,1,0,5,8,2.4,0.8,0.8,,0,2014,Brazil,32,South American Football Confederation,South America,1.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2014,T-17,Costa Rica,CRI,5,2,3,1,1,5,3,1.0,0.4,0.6,,0,2014,Brazil,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,11.0,1.0,14.0,10.0,10.0,0.9999990000010001,0.0
+WC-2014,T-18,Croatia,HRV,6,6,1,2,0,3,0,2.0,2.0,0.3333333333333333,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,5.0,1.0,8.0,0.0,0.0,0.0,0.0
+WC-2014,T-25,Ecuador,ECU,3,3,1,1,1,3,0,1.0,1.0,0.3333333333333333,,0,2014,Brazil,32,South American Football Confederation,South America,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2014,T-28,England,ENG,2,4,0,2,1,3,-2,0.6666666666666666,1.3333333333333333,0.0,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2014,T-30,France,FRA,10,3,3,1,1,5,7,2.0,0.6,0.6,,0,2014,Brazil,32,Union of European Football Associations,Europe,1.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2014,T-31,Germany,DEU,18,4,6,0,1,7,14,2.5714285714285716,0.5714285714285714,0.8571428571428571,1.0,0,2014,Brazil,32,Union of European Football Associations,Europe,3.0,6.0,0.0,6.0,0.0,0.0,0.0,1.0
+WC-2014,T-32,Ghana,GHA,4,6,0,2,1,3,-2,1.3333333333333333,2.0,0.0,,0,2014,Brazil,32,Confederation of African Football,Africa,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2014,T-33,Greece,GRC,3,5,1,2,1,4,-2,0.75,1.25,0.25,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,7.0,1.0,10.0,4.0,4.0,0.9999975000062501,0.0
+WC-2014,T-35,Honduras,HND,1,8,0,3,0,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,2014,Brazil,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2014,T-38,Iran,IRN,1,4,0,2,1,3,-3,0.3333333333333333,1.3333333333333333,0.0,,0,2014,Brazil,32,Asian Football Confederation,Middle East,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2014,T-41,Italy,ITA,2,3,1,2,0,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,4.0,1.0,7.0,0.0,0.0,0.0,0.0
+WC-2014,T-42,Ivory Coast,CIV,4,5,1,2,0,3,-1,1.3333333333333333,1.6666666666666667,0.3333333333333333,,0,2014,Brazil,32,Confederation of African Football,Africa,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2014,T-44,Japan,JPN,2,6,0,2,1,3,-4,0.6666666666666666,2.0,0.0,,0,2014,Brazil,32,Asian Football Confederation,East Asia,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2014,T-46,Mexico,MEX,5,3,2,1,1,4,2,1.25,0.75,0.5,,0,2014,Brazil,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2014,T-48,Netherlands,NLD,15,4,6,1,0,7,11,2.142857142857143,0.5714285714285714,0.8571428571428571,3.0,0,2014,Brazil,32,Union of European Football Associations,Europe,1.0,11.0,0.0,11.0,8.0,8.0,0.9999987500015626,3.0
+WC-2014,T-50,Nigeria,NGA,3,5,1,2,1,4,-2,0.75,1.25,0.25,,0,2014,Brazil,32,Confederation of African Football,Africa,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2014,T-58,Portugal,PRT,4,7,1,1,1,3,-3,1.3333333333333333,2.3333333333333335,0.3333333333333333,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,3.0,1.0,6.0,0.0,0.0,0.0,0.0
+WC-2014,T-62,Russia,RUS,2,3,0,1,2,3,-1,0.6666666666666666,1.0,0.0,,0,2014,Brazil,32,Union of European Football Associations,"Europe, Asia",0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2014,T-71,South Korea,KOR,3,6,0,2,1,3,-3,1.0,2.0,0.0,,0,2014,Brazil,32,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2014,T-73,Spain,ESP,4,7,1,2,0,3,-3,1.3333333333333333,2.3333333333333335,0.3333333333333333,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2014,T-75,Switzerland,CHE,7,7,2,2,0,4,0,1.75,1.75,0.5,,0,2014,Brazil,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2014,T-83,United States,USA,5,6,1,2,1,4,-1,1.25,1.5,0.25,,0,2014,Brazil,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2014,T-84,Uruguay,URY,4,6,2,2,0,4,-2,1.0,1.5,0.5,,0,2014,Brazil,32,South American Football Confederation,South America,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2015,T-04,Australia,AUS,5,5,2,2,1,5,0,1.0,1.0,0.4,,0,2015,Canada,24,Asian Football Confederation,Oceania,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-2015,T-09,Brazil,BRA,4,1,3,1,0,4,3,1.0,0.25,0.75,,0,2015,Canada,24,South American Football Confederation,South America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2015,T-11,Cameroon,CMR,9,4,2,2,0,4,5,2.25,1.0,0.5,,0,2015,Canada,24,Confederation of African Football,Africa,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2015,T-12,Canada,CAN,4,3,2,1,2,5,1,0.8,0.6,0.4,,1,2015,Canada,24,"Confederation of North, Central American and Caribbean Association Football",North America,1.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2015,T-14,China,CHN,4,4,2,2,1,5,0,0.8,0.8,0.4,,0,2015,Canada,24,Asian Football Confederation,East Asia,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2015,T-16,Colombia,COL,4,5,1,2,1,4,-1,1.0,1.25,0.25,,0,2015,Canada,24,South American Football Confederation,South America,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-2015,T-17,Costa Rica,CRI,3,4,0,1,2,3,-1,1.0,1.3333333333333333,0.0,,0,2015,Canada,24,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+WC-2015,T-25,Ecuador,ECU,1,17,0,3,0,3,-16,0.3333333333333333,5.666666666666667,0.0,,0,2015,Canada,24,South American Football Confederation,South America,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-2015,T-28,England,ENG,10,7,5,2,0,7,3,1.4285714285714286,1.0,0.7142857142857143,3.0,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,3.0
+WC-2015,T-30,France,FRA,10,3,3,2,0,5,7,2.0,0.6,0.6,,0,2015,Canada,24,Union of European Football Associations,Europe,1.0,3.0,0.0,3.0,5.0,5.0,0.9999980000040001,0.0
+WC-2015,T-31,Germany,DEU,20,6,4,2,1,7,14,2.857142857142857,0.8571428571428571,0.5714285714285714,4.0,0,2015,Canada,24,Union of European Football Associations,Europe,2.0,8.0,0.0,8.0,5.0,5.0,0.9999980000040001,4.0
+WC-2015,T-42,Ivory Coast,CIV,3,16,0,3,0,3,-13,1.0,5.333333333333333,0.0,,0,2015,Canada,24,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2015,T-44,Japan,JPN,11,8,6,1,0,7,3,1.5714285714285714,1.1428571428571428,0.8571428571428571,2.0,0,2015,Canada,24,Asian Football Confederation,East Asia,1.0,6.0,0.0,6.0,0.0,0.0,0.0,2.0
+WC-2015,T-46,Mexico,MEX,2,8,0,2,1,3,-6,0.6666666666666666,2.6666666666666665,0.0,,0,2015,Canada,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2015,T-48,Netherlands,NLD,3,4,1,2,1,4,-1,0.75,1.0,0.25,,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2015,T-49,New Zealand,NZL,2,3,0,1,2,3,-1,0.6666666666666666,1.0,0.0,,0,2015,Canada,24,Oceania Football Confederation,Oceania,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2015,T-50,Nigeria,NGA,3,6,0,2,1,3,-3,1.0,2.0,0.0,,0,2015,Canada,24,Confederation of African Football,Africa,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
+WC-2015,T-53,Norway,NOR,9,4,2,1,1,4,5,2.25,1.0,0.5,,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-2015,T-71,South Korea,KOR,4,8,1,2,1,4,-4,1.0,2.0,0.25,,0,2015,Canada,24,Asian Football Confederation,East Asia,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2015,T-73,Spain,ESP,2,4,0,2,1,3,-2,0.6666666666666666,1.3333333333333333,0.0,,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2015,T-74,Sweden,SWE,5,8,0,1,3,4,-3,1.25,2.0,0.0,,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2015,T-75,Switzerland,CHE,11,5,1,3,0,4,6,2.75,1.25,0.25,,0,2015,Canada,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2015,T-76,Thailand,THA,3,10,1,2,0,3,-7,1.0,3.3333333333333335,0.3333333333333333,,0,2015,Canada,24,Asian Football Confederation,South East Asia,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2015,T-83,United States,USA,14,3,6,0,1,7,11,2.0,0.42857142857142855,0.8571428571428571,1.0,0,2015,Canada,24,"Confederation of North, Central American and Caribbean Association Football",North America,3.0,6.0,0.0,6.0,0.0,0.0,0.0,1.0
+WC-2018,T-03,Argentina,ARG,6,9,1,2,1,4,-3,1.5,2.25,0.25,,0,2018,Russia,32,South American Football Confederation,South America,0.0,11.0,0.0,11.0,0.0,0.0,0.0,0.0
+WC-2018,T-04,Australia,AUS,2,5,0,2,1,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,2018,Russia,32,Asian Football Confederation,Oceania,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2018,T-06,Belgium,BEL,16,6,6,1,0,7,10,2.2857142857142856,0.8571428571428571,0.8571428571428571,3.0,0,2018,Russia,32,Union of European Football Associations,Europe,3.0,11.0,0.0,11.0,0.0,0.0,0.0,3.0
+WC-2018,T-09,Brazil,BRA,8,3,3,1,1,5,5,1.6,0.6,0.6,,0,2018,Russia,32,South American Football Confederation,South America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2018,T-16,Colombia,COL,6,3,2,2,0,4,3,1.5,0.75,0.5,,0,2018,Russia,32,South American Football Confederation,South America,0.0,10.0,1.0,13.0,5.0,5.0,0.9999980000040001,0.0
+WC-2018,T-17,Costa Rica,CRI,2,5,0,2,1,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,2018,Russia,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2018,T-18,Croatia,HRV,14,9,6,1,0,7,5,2.0,1.2857142857142858,0.8571428571428571,2.0,0,2018,Russia,32,Union of European Football Associations,Europe,1.0,15.0,0.0,15.0,10.0,10.0,0.9999990000010001,2.0
+WC-2018,T-22,Denmark,DNK,3,2,1,1,2,4,1,0.75,0.5,0.25,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,5.0,5.0,0.9999980000040001,0.0
+WC-2018,T-26,Egypt,EGY,2,6,0,3,0,3,-4,0.6666666666666666,2.0,0.0,,0,2018,Russia,32,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2018,T-28,England,ENG,12,8,4,3,0,7,4,1.7142857142857142,1.1428571428571428,0.5714285714285714,4.0,0,2018,Russia,32,Union of European Football Associations,Europe,1.0,8.0,0.0,8.0,5.0,5.0,0.9999980000040001,4.0
+WC-2018,T-30,France,FRA,14,6,6,0,1,7,8,2.0,0.8571428571428571,0.8571428571428571,1.0,0,2018,Russia,32,Union of European Football Associations,Europe,3.0,12.0,0.0,12.0,0.0,0.0,0.0,1.0
+WC-2018,T-31,Germany,DEU,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,3.0,1.0,6.0,0.0,0.0,0.0,0.0
+WC-2018,T-37,Iceland,ISL,2,5,0,2,1,3,-3,0.6666666666666666,1.6666666666666667,0.0,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2018,T-38,Iran,IRN,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,2018,Russia,32,Asian Football Confederation,Middle East,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2018,T-44,Japan,JPN,6,7,1,2,1,4,-1,1.5,1.75,0.25,,0,2018,Russia,32,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2018,T-46,Mexico,MEX,3,6,2,2,0,4,-3,0.75,1.5,0.5,,0,2018,Russia,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2018,T-47,Morocco,MAR,2,4,0,2,1,3,-2,0.6666666666666666,1.3333333333333333,0.0,,0,2018,Russia,32,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2018,T-50,Nigeria,NGA,3,4,1,2,0,3,-1,1.0,1.3333333333333333,0.3333333333333333,,0,2018,Russia,32,Confederation of African Football,Africa,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2018,T-54,Panama,PAN,2,11,0,3,0,3,-9,0.6666666666666666,3.6666666666666665,0.0,,0,2018,Russia,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,11.0,0.0,11.0,0.0,0.0,0.0,0.0
+WC-2018,T-56,Peru,PER,2,2,1,2,0,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,2018,Russia,32,South American Football Confederation,South America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2018,T-57,Poland,POL,2,5,1,2,0,3,-3,0.6666666666666666,1.6666666666666667,0.3333333333333333,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2018,T-58,Portugal,PRT,6,6,1,1,2,4,0,1.5,1.5,0.25,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2018,T-62,Russia,RUS,11,7,3,2,0,5,4,2.2,1.4,0.6,,1,2018,Russia,32,Union of European Football Associations,"Europe, Asia",0.0,7.0,1.0,10.0,9.0,9.0,0.9999988888901234,0.0
+WC-2018,T-63,Saudi Arabia,SAU,2,7,1,2,0,3,-5,0.6666666666666666,2.3333333333333335,0.3333333333333333,,0,2018,Russia,32,Asian Football Confederation,Middle East,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-2018,T-65,Senegal,SEN,4,4,1,1,1,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,2018,Russia,32,Confederation of African Football,Africa,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2018,T-66,Serbia,SRB,2,4,1,2,0,3,-2,0.6666666666666666,1.3333333333333333,0.3333333333333333,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2018,T-71,South Korea,KOR,3,3,1,2,0,3,0,1.0,1.0,0.3333333333333333,,0,2018,Russia,32,Asian Football Confederation,East Asia,0.0,10.0,0.0,10.0,0.0,0.0,0.0,0.0
+WC-2018,T-73,Spain,ESP,7,6,1,1,2,4,1,1.75,1.5,0.25,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,5.0,5.0,0.9999980000040001,0.0
+WC-2018,T-74,Sweden,SWE,6,4,3,2,0,5,2,1.2,0.8,0.6,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2018,T-75,Switzerland,CHE,5,5,1,1,2,4,0,1.25,1.25,0.25,,0,2018,Russia,32,Union of European Football Associations,Europe,0.0,10.0,1.0,13.0,0.0,0.0,0.0,0.0
+WC-2018,T-79,Tunisia,TUN,5,8,1,2,0,3,-3,1.6666666666666667,2.6666666666666665,0.3333333333333333,,0,2018,Russia,32,Confederation of African Football,Africa,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2018,T-84,Uruguay,URY,7,3,4,1,0,5,4,1.4,0.6,0.8,,0,2018,Russia,32,South American Football Confederation,South America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2019,T-03,Argentina,ARG,3,4,0,1,2,3,-1,1.0,1.3333333333333333,0.0,,0,2019,France,24,South American Football Confederation,South America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2019,T-04,Australia,AUS,9,6,2,2,0,4,3,2.25,1.5,0.5,,0,2019,France,24,Asian Football Confederation,Oceania,0.0,3.0,1.0,6.0,3.0,3.0,0.9999966666777778,0.0
+WC-2019,T-09,Brazil,BRA,7,5,2,2,0,4,2,1.75,1.25,0.5,,0,2019,France,24,South American Football Confederation,South America,0.0,11.0,0.0,11.0,0.0,0.0,0.0,0.0
+WC-2019,T-11,Cameroon,CMR,3,8,1,3,0,4,-5,0.75,2.0,0.25,,0,2019,France,24,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2019,T-12,Canada,CAN,4,3,2,2,0,4,1,1.0,0.75,0.5,,0,2019,France,24,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2019,T-13,Chile,CHL,2,5,1,2,0,3,-3,0.6666666666666666,1.6666666666666667,0.3333333333333333,,0,2019,France,24,South American Football Confederation,South America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-14,China,CHN,1,3,1,2,1,4,-2,0.25,0.75,0.25,,0,2019,France,24,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-28,England,ENG,13,5,5,2,0,7,8,1.8571428571428572,0.7142857142857143,0.7142857142857143,4.0,0,2019,France,24,Union of European Football Associations,Europe,2.0,4.0,1.0,7.0,0.0,0.0,0.0,4.0
+WC-2019,T-30,France,FRA,10,4,4,1,0,5,6,2.0,0.8,0.8,,1,2019,France,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-31,Germany,DEU,10,2,4,1,0,5,8,2.0,0.4,0.8,,0,2019,France,24,Union of European Football Associations,Europe,1.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-41,Italy,ITA,9,4,3,2,0,5,5,1.8,0.8,0.6,,0,2019,France,24,Union of European Football Associations,Europe,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2019,T-43,Jamaica,JAM,1,12,0,3,0,3,-11,0.3333333333333333,4.0,0.0,,0,2019,France,24,"Confederation of North, Central American and Caribbean Association Football",Caribbean,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2019,T-44,Japan,JPN,3,5,1,2,1,4,-2,0.75,1.25,0.25,,0,2019,France,24,Asian Football Confederation,East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-48,Netherlands,NLD,11,5,6,1,0,7,6,1.5714285714285714,0.7142857142857143,0.8571428571428571,2.0,0,2019,France,24,Union of European Football Associations,Europe,1.0,6.0,0.0,6.0,0.0,0.0,0.0,2.0
+WC-2019,T-49,New Zealand,NZL,1,5,0,3,0,3,-4,0.3333333333333333,1.6666666666666667,0.0,,0,2019,France,24,Oceania Football Confederation,Oceania,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-2019,T-50,Nigeria,NGA,2,7,1,3,0,4,-5,0.5,1.75,0.25,,0,2019,France,24,Confederation of African Football,Africa,0.0,9.0,1.0,12.0,0.0,0.0,0.0,0.0
+WC-2019,T-53,Norway,NOR,7,7,3,2,0,5,0,1.4,1.4,0.6,,0,2019,France,24,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,4.0,4.0,0.9999975000062501,0.0
+WC-2019,T-64,Scotland,SCO,5,7,0,2,1,3,-2,1.6666666666666667,2.3333333333333335,0.0,,0,2019,France,24,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2019,T-70,South Africa,ZAF,1,8,0,3,0,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,2019,France,24,Confederation of African Football,Africa,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-2019,T-71,South Korea,KOR,1,8,0,3,0,3,-7,0.3333333333333333,2.6666666666666665,0.0,,0,2019,France,24,Asian Football Confederation,East Asia,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0
+WC-2019,T-73,Spain,ESP,4,4,1,2,1,4,0,1.0,1.0,0.25,,0,2019,France,24,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,0.0,0.0,0.0,0.0
+WC-2019,T-74,Sweden,SWE,12,6,5,2,0,7,6,1.7142857142857142,0.8571428571428571,0.7142857142857143,3.0,0,2019,France,24,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,3.0
+WC-2019,T-76,Thailand,THA,1,20,0,3,0,3,-19,0.3333333333333333,6.666666666666667,0.0,,0,2019,France,24,Asian Football Confederation,South East Asia,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2019,T-83,United States,USA,26,3,7,0,0,7,23,3.7142857142857144,0.42857142857142855,1.0,1.0,0,2019,France,24,"Confederation of North, Central American and Caribbean Association Football",North America,4.0,7.0,0.0,7.0,0.0,0.0,0.0,1.0
+WC-2022,T-03,Argentina,ARG,15,8,6,1,0,7,7,2.142857142857143,1.1428571428571428,0.8571428571428571,1.0,0,2022,Qatar,32,South American Football Confederation,South America,4.0,17.0,0.0,17.0,9.0,9.0,0.9999988888901234,1.0
+WC-2022,T-04,Australia,AUS,4,6,2,2,0,4,-2,1.0,1.5,0.5,,0,2022,Qatar,32,Asian Football Confederation,Oceania,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-06,Belgium,BEL,1,2,1,1,1,3,-1,0.3333333333333333,0.6666666666666666,0.3333333333333333,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2022,T-09,Brazil,BRA,8,3,3,2,0,5,5,1.6,0.6,0.6,,0,2022,Qatar,32,South American Football Confederation,South America,0.0,6.0,0.0,6.0,4.0,4.0,0.9999975000062501,0.0
+WC-2022,T-11,Cameroon,CMR,4,4,1,1,1,3,0,1.3333333333333333,1.3333333333333333,0.3333333333333333,,0,2022,Qatar,32,Confederation of African Football,Africa,0.0,7.0,1.0,10.0,0.0,0.0,0.0,0.0
+WC-2022,T-12,Canada,CAN,2,7,0,3,0,3,-5,0.6666666666666666,2.3333333333333335,0.0,,0,2022,Qatar,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2022,T-17,Costa Rica,CRI,3,11,1,2,0,3,-8,1.0,3.6666666666666665,0.3333333333333333,,0,2022,Qatar,32,"Confederation of North, Central American and Caribbean Association Football",Central America,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2022,T-18,Croatia,HRV,8,7,4,1,2,7,1,1.1428571428571428,1.0,0.5714285714285714,3.0,0,2022,Qatar,32,Union of European Football Associations,Europe,1.0,8.0,0.0,8.0,8.0,8.0,0.9999987500015626,3.0
+WC-2022,T-22,Denmark,DNK,1,3,0,2,1,3,-2,0.3333333333333333,1.0,0.0,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2022,T-25,Ecuador,ECU,4,3,1,1,1,3,1,1.3333333333333333,1.0,0.3333333333333333,,0,2022,Qatar,32,South American Football Confederation,South America,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2022,T-28,England,ENG,13,4,3,1,1,5,9,2.6,0.8,0.6,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0
+WC-2022,T-30,France,FRA,16,8,5,2,0,7,8,2.2857142857142856,1.1428571428571428,0.7142857142857143,2.0,0,2022,Qatar,32,Union of European Football Associations,Europe,3.0,8.0,0.0,8.0,4.0,4.0,0.9999975000062501,2.0
+WC-2022,T-31,Germany,DEU,6,5,1,1,1,3,1,2.0,1.6666666666666667,0.3333333333333333,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,3.0,0.0,3.0,0.0,0.0,0.0,0.0
+WC-2022,T-32,Ghana,GHA,5,7,1,2,0,3,-2,1.6666666666666667,2.3333333333333335,0.3333333333333333,,0,2022,Qatar,32,Confederation of African Football,Africa,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2022,T-38,Iran,IRN,4,7,1,2,0,3,-3,1.3333333333333333,2.3333333333333335,0.3333333333333333,,0,2022,Qatar,32,Asian Football Confederation,Middle East,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-44,Japan,JPN,5,4,2,2,0,4,1,1.25,1.0,0.5,,0,2022,Qatar,32,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,4.0,4.0,0.9999975000062501,0.0
+WC-2022,T-46,Mexico,MEX,2,3,1,1,1,3,-1,0.6666666666666666,1.0,0.3333333333333333,,0,2022,Qatar,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-47,Morocco,MAR,6,5,4,2,1,7,1,0.8571428571428571,0.7142857142857143,0.5714285714285714,4.0,0,2022,Qatar,32,Confederation of African Football,Africa,0.0,8.0,1.0,11.0,4.0,4.0,0.9999975000062501,4.0
+WC-2022,T-48,Netherlands,NLD,10,4,3,1,1,5,6,2.0,0.8,0.6,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,11.0,1.0,14.0,5.0,5.0,0.9999980000040001,0.0
+WC-2022,T-57,Poland,POL,3,5,1,2,1,4,-2,0.75,1.25,0.25,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-58,Portugal,PRT,12,6,3,2,0,5,6,2.4,1.2,0.6,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2022,T-59,Qatar,QAT,1,7,0,3,0,3,-6,0.3333333333333333,2.3333333333333335,0.0,,1,2022,Qatar,32,Asian Football Confederation,Middle East,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-63,Saudi Arabia,SAU,3,5,1,2,0,3,-2,1.0,1.6666666666666667,0.3333333333333333,,0,2022,Qatar,32,Asian Football Confederation,Middle East,0.0,14.0,0.0,14.0,0.0,0.0,0.0,0.0
+WC-2022,T-65,Senegal,SEN,5,7,2,2,0,4,-2,1.25,1.75,0.5,,0,2022,Qatar,32,Confederation of African Football,Africa,0.0,7.0,0.0,7.0,0.0,0.0,0.0,0.0
+WC-2022,T-66,Serbia,SRB,5,8,0,2,1,3,-3,1.6666666666666667,2.6666666666666665,0.0,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,12.0,0.0,12.0,0.0,0.0,0.0,0.0
+WC-2022,T-71,South Korea,KOR,5,8,1,2,1,4,-3,1.25,2.0,0.25,,0,2022,Qatar,32,Asian Football Confederation,East Asia,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0
+WC-2022,T-73,Spain,ESP,9,3,1,2,1,4,6,2.25,0.75,0.25,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,2.0,0.0,2.0,3.0,3.0,0.9999966666777778,0.0
+WC-2022,T-75,Switzerland,CHE,5,9,2,2,0,4,-4,1.25,2.25,0.5,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,9.0,0.0,9.0,0.0,0.0,0.0,0.0
+WC-2022,T-79,Tunisia,TUN,1,1,1,1,1,3,0,0.3333333333333333,0.3333333333333333,0.3333333333333333,,0,2022,Qatar,32,Confederation of African Football,Africa,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2022,T-83,United States,USA,3,4,1,1,2,4,-1,0.75,1.0,0.25,,0,2022,Qatar,32,"Confederation of North, Central American and Caribbean Association Football",North America,0.0,5.0,0.0,5.0,0.0,0.0,0.0,0.0
+WC-2022,T-84,Uruguay,URY,2,2,1,1,1,3,0,0.6666666666666666,0.6666666666666666,0.3333333333333333,,0,2022,Qatar,32,South American Football Confederation,South America,0.0,8.0,0.0,8.0,0.0,0.0,0.0,0.0
+WC-2022,T-85,Wales,WAL,1,6,0,2,1,3,-5,0.3333333333333333,2.0,0.0,,0,2022,Qatar,32,Union of European Football Associations,Europe,0.0,6.0,1.0,9.0,0.0,0.0,0.0,0.0
