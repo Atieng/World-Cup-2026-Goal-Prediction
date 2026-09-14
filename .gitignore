@@ -1,3 +1,18 @@
 /Test.csv
 /Train.csv
 /my_first_submission.csv
+# Generated model artifacts
+models/
+catboost_info/
+
+# Generated figures
+images/
+*.png
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
