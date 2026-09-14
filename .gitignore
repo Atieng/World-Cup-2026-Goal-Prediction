@@ -1,6 +1,3 @@
-/Test.csv
-/Train.csv
-/my_first_submission.csv
 # Generated model artifacts
 models/
 catboost_info/
