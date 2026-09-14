@@ -1,0 +1,11 @@
+,rf_regressor,rf_classifier,xgb_regressor,xgb_classifier
+max_depth,,10,3.0,3.0
+max_features,sqrt,sqrt,,
+min_samples_leaf,2,1,,
+min_samples_split,2,2,,
+n_estimators,300,200,200.0,600.0
+colsample_bytree,,,1.0,0.7
+learning_rate,,,0.1,0.01
+reg_alpha,,,0.1,0.0
+reg_lambda,,,2.0,1.0
+subsample,,,0.7,1.0
