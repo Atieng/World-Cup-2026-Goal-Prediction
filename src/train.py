@@ -36,28 +36,54 @@ def macro_f1(y, p):
     return float(f1_score(y, p, average="macro", zero_division=0))
 
 
+def assign_slots(score, slot_counts):
+    """Rank teams by score (highest = strongest) and fill stages in order.
+    slot_counts maps stage_numeric -> number of teams that finish there."""
+    order = np.argsort(-np.asarray(score, dtype=float), kind="stable")
+    pred = np.empty(len(order), dtype=int)
+    i = 0
+    for stage in sorted(slot_counts, reverse=True):
+        n = slot_counts[stage]
+        pred[order[i:i + n]] = stage
+        i += n
+    return pred
+
+
 def evaluate(df):
     rows = []
     for year in TEST_YEARS:
         tr, va = df[df["year"] < year], df[df["year"] == year]
+        X_tr, X_va = tr[FEATURES], va[FEATURES]
         y_g, y_s = va["total_goals"], va["stage_numeric"]
         mean_goals = tr["total_goals"].mean()
+        slots = y_s.value_counts().to_dict()   # tournament format is known in advance
 
-        # Baselines
+        # --- Goals baselines ---
         rows.append((year, "goals", "Baseline: train mean", rmse(y_g, np.full(len(va), mean_goals))))
         last = np.where(va["first_appearance"] == 1, mean_goals, va["last_gf"])
         rows.append((year, "goals", "Baseline: last tournament", rmse(y_g, last)))
+
+        # --- Stage baselines ---
         rows.append((year, "stage", "Baseline: always group", macro_f1(y_s, np.zeros(len(va)))))
         rows.append((year, "stage", "Baseline: repeat last stage",
                      macro_f1(y_s, va["last_stage"].clip(lower=0))))
+        rows.append((year, "stage", "Baseline: slots by past win rate",
+                     macro_f1(y_s, assign_slots(va["prev_win_rate"], slots))))
 
-        # Models
+        # --- Goal models (and their predictions used as a strength ranking) ---
         for name, make in GOAL_MODELS.items():
-            m = make().fit(tr[FEATURES], tr["total_goals"])
-            rows.append((year, "goals", name, rmse(y_g, m.predict(va[FEATURES]))))
+            pred_goals = make().fit(X_tr, tr["total_goals"]).predict(X_va)
+            rows.append((year, "goals", name, rmse(y_g, pred_goals)))
+            rows.append((year, "stage", f"{name} (goals) + slots",
+                         macro_f1(y_s, assign_slots(pred_goals, slots))))
+
+        # --- Stage models: raw prediction vs. expected stage + slots ---
         for name, make in STAGE_MODELS.items():
-            m = make().fit(tr[FEATURES], tr["stage_numeric"])
-            rows.append((year, "stage", name, macro_f1(y_s, m.predict(va[FEATURES]))))
+            m = make().fit(X_tr, tr["stage_numeric"])
+            rows.append((year, "stage", name, macro_f1(y_s, m.predict(X_va))))
+            expected = m.predict_proba(X_va) @ m.classes_
+            rows.append((year, "stage", f"{name} + slots",
+                         macro_f1(y_s, assign_slots(expected, slots))))
 
     return pd.DataFrame(rows, columns=["year", "task", "model", "score"])
 
@@ -72,6 +98,6 @@ if __name__ == "__main__":
 
     table = results.pivot_table(index=["task", "model"], columns="year", values="score")
     table["mean"] = table.mean(axis=1)
-    pd.set_option("display.width", 120)
+    pd.set_option("display.width", 140)
     print("\nGoals = RMSE (lower is better) | Stage = macro F1 (higher is better)\n")
     print(table.round(3))
