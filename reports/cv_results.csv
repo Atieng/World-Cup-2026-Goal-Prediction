@@ -1,0 +1,33 @@
+year,task,model,score
+2010,goals,Baseline: train mean,3.8274708897298617
+2010,goals,Baseline: last tournament,3.3971938225048666
+2010,stage,Baseline: always group,0.1111111111111111
+2010,stage,Baseline: repeat last stage,0.3125
+2010,goals,Poisson regression,3.400384296699413
+2010,goals,Gradient boosting,3.2830412325659197
+2010,stage,Logistic regression,0.1728395061728395
+2010,stage,Gradient boosting,0.27037037037037037
+2014,goals,Baseline: train mean,3.9828978091024436
+2014,goals,Baseline: last tournament,3.731701026337446
+2014,stage,Baseline: always group,0.1111111111111111
+2014,stage,Baseline: repeat last stage,0.15257352941176472
+2014,goals,Poisson regression,3.5222342682605685
+2014,goals,Gradient boosting,3.5087325521270927
+2014,stage,Logistic regression,0.18221343873517784
+2014,stage,Gradient boosting,0.21831501831501832
+2018,goals,Baseline: train mean,4.014318813489056
+2018,goals,Baseline: last tournament,4.939908047979371
+2018,stage,Baseline: always group,0.1111111111111111
+2018,stage,Baseline: repeat last stage,0.16556776556776556
+2018,goals,Poisson regression,3.6733717882861328
+2018,goals,Gradient boosting,4.1366702252659255
+2018,stage,Logistic regression,0.21818181818181817
+2018,stage,Gradient boosting,0.16138763197586728
+2022,goals,Baseline: train mean,4.026421758701227
+2022,goals,Baseline: last tournament,4.201692851420922
+2022,stage,Baseline: always group,0.1111111111111111
+2022,stage,Baseline: repeat last stage,0.24553571428571427
+2022,goals,Poisson regression,3.2152651660536655
+2022,goals,Gradient boosting,3.3449771857749235
+2022,stage,Logistic regression,0.24965493443754314
+2022,stage,Gradient boosting,0.2075351213282248
