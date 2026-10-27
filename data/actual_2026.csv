@@ -1,0 +1,49 @@
+country,group,actual_goals,matches,actual_stage
+France,I,20,8,sf
+England,L,20,8,sf
+Argentina,J,19,8,runnerup
+Spain,H,14,8,champion
+Belgium,G,14,6,qf
+Norway,I,13,6,qf
+United States,D,11,5,roundof16
+Germany,E,11,4,roundof32
+Netherlands,F,11,4,roundof32
+Mexico,A,10,5,roundof16
+Brazil,C,10,5,roundof16
+Switzerland,B,10,6,qf
+Morocco,C,10,6,qf
+Senegal,I,10,4,roundof32
+Canada,B,9,5,roundof16
+Japan,F,8,4,roundof32
+Portugal,K,8,5,roundof16
+Egypt,G,8,5,roundof16
+Sweden,F,7,4,roundof32
+Austria,J,6,4,roundof32
+Croatia,L,6,4,roundof32
+Colombia,K,5,5,roundof16
+DR Congo,K,5,4,roundof32
+Cote d'Ivoire,E,5,4,roundof32
+Algeria,J,5,4,roundof32
+Bosnia and Herzegovina,B,5,4,roundof32
+New Zealand,G,4,3,group
+Cabo Verde,H,4,4,roundof32
+Australia,D,3,4,roundof32
+Uruguay,H,3,3,group
+Turkiye,D,3,3,group
+Paraguay,D,3,5,roundof16
+Iran,G,3,3,group
+Jordan,J,3,3,group
+Ghana,L,2,4,roundof32
+Haiti,C,2,3,group
+Czechia,A,2,3,group
+South Korea,A,2,3,group
+South Africa,A,2,4,roundof32
+Qatar,B,2,3,group
+Tunisia,F,2,3,group
+Uzbekistan,K,2,3,group
+Ecuador,E,2,4,roundof32
+Scotland,C,1,3,group
+Saudi Arabia,H,1,3,group
+Curacao,E,1,3,group
+Iraq,I,1,3,group
+Panama,L,0,3,group
