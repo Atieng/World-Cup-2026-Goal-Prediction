@@ -1,0 +1,49 @@
+country,total_goals,actual_goals,goal_err,Target,actual_stage
+Austria,5.64,6,-0.36,roundof32,roundof32
+Belgium,6.1,14,-7.9,roundof16,qf
+Bosnia and Herzegovina,4.31,5,-0.69,roundof32,roundof32
+Croatia,6.57,6,0.57,roundof16,roundof32
+Czechia,4.05,2,2.05,group,group
+England,8.0,20,-12.0,sf,sf
+France,9.25,20,-10.75,sf,sf
+Germany,7.46,11,-3.54,qf,roundof32
+Netherlands,7.58,11,-3.42,qf,roundof32
+Norway,4.75,13,-8.25,roundof32,qf
+Portugal,6.86,8,-1.14,roundof16,roundof16
+Scotland,4.45,1,3.45,roundof32,group
+Spain,7.92,14,-6.08,qf,champion
+Sweden,6.99,7,-0.01,qf,roundof32
+Switzerland,5.86,10,-4.14,roundof16,qf
+Turkiye,6.49,3,3.49,roundof16,group
+Algeria,4.74,5,-0.26,roundof32,roundof32
+Cabo Verde,4.04,4,0.04,group,roundof32
+Cote d'Ivoire,4.49,5,-0.51,roundof32,roundof32
+DR Congo,4.04,5,-0.96,group,roundof32
+Egypt,3.94,8,-4.06,group,roundof16
+Ghana,4.81,2,2.81,roundof32,roundof32
+Morocco,5.45,10,-4.55,roundof32,qf
+Senegal,5.18,10,-4.82,roundof32,roundof32
+South Africa,4.18,2,2.18,roundof32,roundof32
+Tunisia,4.03,2,2.03,group,group
+Australia,4.53,3,1.53,roundof32,roundof32
+Iran,3.95,3,0.95,group,group
+Iraq,3.48,1,2.48,group,group
+Japan,4.99,8,-3.01,roundof32,roundof32
+Jordan,4.04,3,1.04,group,group
+Qatar,3.13,2,1.13,group,group
+Saudi Arabia,4.07,1,3.07,group,group
+South Korea,5.43,2,3.43,roundof32,group
+Uzbekistan,4.04,2,2.04,group,group
+Argentina,9.56,19,-9.44,runnerup,runnerup
+Brazil,10.17,10,0.17,champion,roundof16
+Colombia,5.65,5,0.65,roundof16,roundof16
+Ecuador,4.69,2,2.69,roundof32,roundof32
+Paraguay,5.5,3,2.5,roundof32,roundof16
+Uruguay,6.85,3,3.85,roundof16,group
+Canada,3.27,9,-5.73,group,roundof16
+Mexico,5.66,10,-4.34,roundof16,roundof16
+United States,5.57,11,-5.43,roundof32,roundof16
+Curacao,4.04,1,3.04,group,group
+Haiti,2.97,2,0.97,group,group
+Panama,3.06,0,3.06,group,group
+New Zealand,3.45,4,-0.55,group,group
