@@ -9,15 +9,16 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+# One shared stage mapping for the whole project
 STAGE_MAP = {
     "group stage":        "group",
-    "second group stage": "qf",
+    "second group stage": "qf",        # 1974/78/82 second round ≈ last 8–12
     "round of 16":        "roundof16",
     "quarter-finals":     "qf",
     "semi-finals":        "sf",
     "third-place match":  "sf",
-    "final round":        "sf",
-    "final":              "runnerup",
+    "final round":        "sf",        # 1950 final group; top 2 fixed below
+    "final":              "runnerup",  # champion fixed below
 }
 STAGE_ORDER = {"group": 0, "roundof32": 1, "roundof16": 2, "qf": 3,
                "sf": 4, "runnerup": 5, "champion": 6}
@@ -35,6 +36,8 @@ def load_data(data_dir="data"):
 
 
 def build_stages(train, standings):
+    """Stage reached per (tournament, team), with champion/runner-up
+    taken from tournament_standings."""
     s = train[["tournament_id", "team_id", "stage_reached", "total_goals"]].copy()
     s["stage"] = s["stage_reached"].str.lower().str.strip().map(STAGE_MAP)
 
@@ -51,6 +54,7 @@ def build_stages(train, standings):
 
 
 def prior_features(ta, tournaments, stages):
+    """One row per (team, tournament), using only earlier tournaments."""
     mens = tournaments[tournaments["tournament_name"].str.contains("Men's", na=False)]
     per = (ta[ta["tournament_id"].isin(mens["tournament_id"])]
            .groupby(["tournament_id", "team_id"])
@@ -76,6 +80,7 @@ def prior_features(ta, tournaments, stages):
 
 
 def features_for_next(per, team_ids, year=2026):
+    """Same features for an upcoming tournament, built from ALL past rows."""
     hist = per.sort_values("year")
     g = hist.groupby("team_id")
     out = g.agg(prev_apps=("gf", "size"), gf=("gf", "sum"), ga=("ga", "sum"),
@@ -90,6 +95,7 @@ def features_for_next(per, team_ids, year=2026):
     out["last_stage"]    = last["stage_numeric"]
     out["years_since"]   = year - out["last_year"]
 
+    # Teams with no history (debutants) get NaN, then filled below
     out = out.reindex(team_ids).reset_index().rename(columns={"index": "team_id"})
     out["prev_apps"] = out["prev_apps"].fillna(0)
     return _fill_first_appearances(out)
@@ -101,7 +107,7 @@ def _fill_first_appearances(df):
     df["prev_ga_pm"]    = df["prev_ga_pm"].fillna(0)
     df["prev_win_rate"] = df["prev_win_rate"].fillna(0)
     df["last_gf"]       = df["last_gf"].fillna(0)
-    df["last_stage"]    = df["last_stage"].fillna(-1)
+    df["last_stage"]    = df["last_stage"].fillna(-1)   # -1 = never played
     df["best_stage"]    = df["best_stage"].fillna(-1)
     df["years_since"]   = df["years_since"].fillna(99)
     return df
