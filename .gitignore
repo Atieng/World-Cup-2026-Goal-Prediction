@@ -1,15 +1,11 @@
 # Generated model artifacts
 models/
 catboost_info/
-
-# Generated figures
-images/
-*.png
+ 
 
 # Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# OS
-.DS_Store
+ 
